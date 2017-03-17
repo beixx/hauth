@@ -37,14 +37,15 @@ func (c *config) getResource(dir string) error {
 	defer c.lock.RUnlock()
 
 	for _, val := range conf {
-
+		val = strings.TrimSpace(val)
+		val = strings.TrimRight(val, "\r")
 		a := c.trimSpace(val)
 		if len(a) > 0 && a[0] == '#' {
 			continue
 		}
 		key, keyVal, err := c.splitEqual(a)
 		if err == nil {
-			c.Conf[strings.TrimSpace(key)] = strings.TrimSpace(keyVal)
+			c.Conf[key] = keyVal
 		}
 	}
 	return nil
