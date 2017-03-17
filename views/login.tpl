@@ -53,6 +53,12 @@
             </div>
         </div>
     </nav>
+    <div class="col-sm-12 col-md-12 col-lg-12" style=" margin-top: 120px; text-align: center;">
+          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">演示用户: demo</span><br/>
+          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">演示密码: 123456</span><br/>
+          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">登录系统后，请先阅读系统帮助信息</span><br/>
+          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">开源地址: </span><a target="blank" href="https://github.com/hzwy23/hauth">github.com/hzwy23/hauth</a>
+    </div>
 </div>
 </body>
 <script type="text/javascript" src="/static/js/utils.js"></script>
