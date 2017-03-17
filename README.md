@@ -43,6 +43,8 @@ DB.user = root
 DB.passwd="xzPEh+SfFL3aimN0zGNB9w=="
 ```
 
+注意: 修改的文件必须保存为utf-8编码,否则可能会出现异常
+
 1. 修改DB.tns中对应的数据库地址，端口号，数据库名称。
 
 2. 修改DB.user成相应的数据库用户名
