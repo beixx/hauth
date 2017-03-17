@@ -1,0 +1,1554 @@
+2017/03/04 21:45:50 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/04 21:45:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/04 21:46:01 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/04 22:02:25 [D] [loginModels.go:17] get default theme. 
+2017/03/04 22:05:53 [D] [loginModels.go:17] get default theme. 
+2017/03/04 22:07:10 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/04 22:07:13 [D] [loginModels.go:17] get default theme. 
+2017/03/04 22:07:16 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/04 22:07:21 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/04 22:07:35 [D] [userRolesController.go:39]  
+2017/03/04 22:07:36 [D] [userRolesController.go:39] test4 
+2017/03/04 22:07:37 [D] [userRolesController.go:39] test7 
+2017/03/04 22:07:38 [D] [userRolesController.go:39] test6 
+2017/03/04 22:07:38 [D] [userRolesController.go:39] test5 
+2017/03/04 22:07:38 [D] [userRolesController.go:39] test4 
+2017/03/04 22:07:39 [D] [userRolesController.go:39] test3 
+2017/03/04 22:07:39 [D] [userRolesController.go:39] test2 
+2017/03/04 22:07:39 [D] [userRolesController.go:39] test1 
+2017/03/04 22:07:40 [D] [userRolesController.go:39] admin 
+2017/03/04 22:07:52 [D] [userRolesController.go:39] test1 
+2017/03/04 22:07:52 [D] [userRolesController.go:39] test2 
+2017/03/04 22:07:53 [D] [userRolesController.go:39] test3 
+2017/03/04 22:07:53 [D] [userRolesController.go:39] test4 
+2017/03/04 22:07:53 [D] [userRolesController.go:39] test5 
+2017/03/04 22:07:53 [D] [userRolesController.go:39] test6 
+2017/03/04 22:07:54 [D] [userRolesController.go:39] test7 
+2017/03/04 22:07:54 [D] [userRolesController.go:39] test6 
+2017/03/04 22:07:54 [D] [userRolesController.go:39] test5 
+2017/03/04 22:07:55 [D] [userRolesController.go:39] test4 
+2017/03/04 22:07:55 [D] [userRolesController.go:39] test3 
+2017/03/04 22:07:55 [D] [userRolesController.go:39] test2 
+2017/03/04 22:07:55 [D] [userRolesController.go:39] test1 
+2017/03/04 22:07:56 [D] [userRolesController.go:39] admin 
+2017/03/04 22:07:57 [D] [userRolesController.go:39] test7 
+2017/03/04 22:07:57 [D] [userRolesController.go:39] test6 
+2017/03/04 22:15:52 [D] [loginModels.go:17] get default theme. 
+2017/03/04 22:18:31 [D] [loginModels.go:17] get default theme. 
+2017/03/04 22:18:36 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/04 22:18:41 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:07:08 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 18:07:30 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:07:34 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 18:08:32 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:16:33 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 18:16:36 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:16:40 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:16:46 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:17:35 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:17:38 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:17:46 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:18:27 [I] [userControllers.go:116] 新增用户信息 yangpanhong 
+2017/03/05 18:18:31 [D] [userRolesController.go:39]  
+2017/03/05 18:18:38 [D] [userRolesController.go:39] yangpanhong 
+2017/03/05 18:18:39 [D] [userRolesController.go:52] yangpanhong 
+2017/03/05 18:18:43 [E] [userRolesController.go:68] [{"user_id":"yangpanhong","role_id":"mas_join_cademo","code_number":"cademo","role_name":"成本分摊演示域","state":true}] 
+2017/03/05 18:18:43 [D] [userRolesController.go:39] yangpanhong 
+2017/03/05 18:18:52 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:19:02 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:19:19 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:19:22 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:19:40 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/05 18:19:44 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 18:19:44 [E] [domainShareController.go:133] 您没有权限修改这个域的共享信息 
+2017/03/05 18:20:35 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 18:20:37 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:20:39 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:20:46 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/05 18:20:57 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 18:21:01 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/05 18:21:01 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 18:21:01 [E] [domainShareController.go:53] <nil> 
+2017/03/05 18:21:04 [D] [domainShareController.go:38] domain_id is : 43254 
+2017/03/05 18:21:04 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 18:21:04 [E] [domainShareController.go:53] <nil> 
+2017/03/05 18:21:06 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 18:21:11 [E] [domainShareController.go:133] 您没有权限修改这个域的共享信息 
+2017/03/05 18:21:14 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:22:52 [D] [loginModels.go:17] get default theme. 
+2017/03/05 18:28:44 [D] [loginModels.go:17] get default theme. 
+2017/03/05 20:51:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 20:52:08 [D] [loginModels.go:17] get default theme. 
+2017/03/05 20:52:15 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:05:00 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:05:05 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 21:05:18 [D] [domainShareController.go:38] domain_id is : 43254 
+2017/03/05 21:05:18 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:05:18 [E] [domainShareController.go:53] <nil> 
+2017/03/05 21:05:20 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 21:05:26 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/05 21:05:26 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:05:26 [E] [domainShareController.go:53] <nil> 
+2017/03/05 21:05:28 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 21:16:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 21:16:52 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:16:55 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:16:55 [D] [userControllers.go:52] -1 
+2017/03/05 21:16:55 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:16:55 [D] [userControllers.go:52] -1 
+2017/03/05 21:17:00 [D] [userControllers.go:52] 2 
+2017/03/05 21:17:03 [D] [userControllers.go:52] 1 
+2017/03/05 21:17:06 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:17:06 [D] [userControllers.go:52] -1 
+2017/03/05 21:17:08 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:17:18 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 21:17:22 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:17:25 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:17:25 [D] [userControllers.go:52] -1 
+2017/03/05 21:17:25 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:17:25 [D] [userControllers.go:52] -1 
+2017/03/05 21:21:25 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 21:21:28 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:21:33 [D] [userControllers.go:54] 1 
+2017/03/05 21:22:15 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:23:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 21:23:10 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:23:41 [I] [userControllers.go:145] 新增用户信息 23432154 
+2017/03/05 21:23:47 [D] [userControllers.go:54] 1 
+2017/03/05 21:23:49 [D] [userControllers.go:54] 2 
+2017/03/05 21:23:55 [D] [userControllers.go:54] 2 
+2017/03/05 21:24:17 [I] [userControllers.go:145] 新增用户信息 42354 
+2017/03/05 21:24:17 [D] [userControllers.go:54] 2 
+2017/03/05 21:24:28 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 21:25:20 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:25:20 [I] [userControllers.go:145] 新增用户信息 4313254 
+2017/03/05 21:25:20 [D] [userControllers.go:54] 1 
+2017/03/05 21:25:44 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:47:02 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:47:09 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/05 21:52:32 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 21:52:43 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:53:05 [D] [userControllers.go:54] 1 
+2017/03/05 21:53:07 [D] [userControllers.go:54] 1 
+2017/03/05 21:53:10 [E] [userModels.go:115] 没有被授权删除这个域中的信息 
+2017/03/05 21:53:10 [E] [userControllers.go:164] 您没有权限操作这个域中的信息 
+2017/03/05 21:53:54 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:54:06 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:54:14 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:54:18 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:54:43 [I] [userControllers.go:145] 新增用户信息 1325432654 
+2017/03/05 21:55:15 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:55:15 [I] [userControllers.go:145] 新增用户信息 431543654 
+2017/03/05 21:55:26 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:55:29 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:55:35 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/05 21:55:43 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 21:55:59 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:56:08 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:56:40 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 21:56:40 [I] [userControllers.go:145] 新增用户信息 324314523 
+2017/03/05 21:56:52 [D] [userControllers.go:54] 2 
+2017/03/05 21:57:13 [I] [userControllers.go:145] 新增用户信息 43214321 
+2017/03/05 21:57:13 [D] [userControllers.go:54] 2 
+2017/03/05 21:57:22 [I] [userControllers.go:168] delete user id successfully. 
+2017/03/05 21:57:22 [D] [userControllers.go:54] 2 
+2017/03/05 21:58:37 [D] [userControllers.go:54] 1 
+2017/03/05 21:58:47 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:59:07 [D] [loginModels.go:17] get default theme. 
+2017/03/05 21:59:16 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 21:59:22 [D] [domainShareController.go:38] domain_id is : 43254 
+2017/03/05 21:59:33 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 21:59:44 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:00:22 [I] [userControllers.go:145] 新增用户信息 123456 
+2017/03/05 22:00:36 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:00:43 [D] [userControllers.go:54] 1 
+2017/03/05 22:00:48 [E] [userModels.go:115] 没有被授权删除这个域中的信息 
+2017/03/05 22:00:48 [E] [userControllers.go:164] 您没有权限操作这个域中的信息 
+2017/03/05 22:12:34 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 22:12:38 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:12:44 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:13:00 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/05 22:13:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 22:13:32 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:13:43 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/05 22:14:13 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/05 22:16:24 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 22:16:28 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:16:59 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/05 22:21:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 22:21:56 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:22:38 [E] [loginController.go:59]   用户没有指定的域 sql: no rows in result set 
+2017/03/05 22:22:41 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:23:03 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 22:23:14 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:24:24 [D] [loginModels.go:17] get default theme. 
+2017/03/05 22:24:30 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:09:25 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 23:09:42 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:09:53 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:10:02 [D] [userControllers.go:54] 2 
+2017/03/05 23:10:09 [D] [userRolesController.go:39]  
+2017/03/05 23:10:10 [D] [userRolesController.go:39] demo 
+2017/03/05 23:10:11 [D] [userRolesController.go:39] yangpanhong 
+2017/03/05 23:10:11 [D] [userRolesController.go:39] 324314523 
+2017/03/05 23:10:11 [D] [userRolesController.go:39] 324314523 
+2017/03/05 23:10:12 [D] [userRolesController.go:39] 123 
+2017/03/05 23:10:12 [D] [userRolesController.go:39] 4543fd 
+2017/03/05 23:10:12 [D] [userRolesController.go:39] 123 
+2017/03/05 23:10:13 [D] [userRolesController.go:39] 324314523 
+2017/03/05 23:10:13 [D] [userRolesController.go:39] yangpanhong 
+2017/03/05 23:10:13 [D] [userRolesController.go:39] demo 
+2017/03/05 23:10:15 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:10:27 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:11:41 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:12:03 [E] [domainModels.go:80] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:12:09 [E] [domainModels.go:80] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:18:08 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 23:18:13 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:18:20 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:18:23 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:18:24 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:18:29 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:19:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/05 23:19:46 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:19:48 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:19:53 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:19:57 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 23:19:57 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:20:30 [E] [domainModels.go:81] <nil> 
+2017/03/05 23:21:57 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:22:03 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:22:15 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:22:21 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:23:12 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/05 23:23:12 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/05 23:23:17 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:23:23 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:23:29 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:23:36 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:23:42 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:23:49 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/05 23:24:38 [E] [domainModels.go:81] <nil> 
+2017/03/05 23:24:46 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:24:54 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/05 23:25:01 [D] [domainShareController.go:38] domain_id is : 43254 
+2017/03/05 23:25:14 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/05 23:25:20 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:25:27 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:25:38 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:25:41 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:25:53 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:32:44 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:32:50 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:33:00 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:33:10 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/05 23:44:00 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:46:20 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:46:28 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:46:35 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:46:46 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:46:56 [D] [loginModels.go:17] get default theme. 
+2017/03/05 23:47:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:12:29 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:12:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:12:49 [D] [userRolesController.go:39]  
+2017/03/06 10:12:54 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:12:55 [D] [userRolesController.go:52] 4543fd 
+2017/03/06 10:13:00 [D] [userControllers.go:54] 2 
+2017/03/06 10:13:02 [D] [userRolesController.go:52] 1325432654 
+2017/03/06 10:13:11 [D] [userRolesController.go:52] 43214321 
+2017/03/06 10:13:16 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:13:17 [D] [userRolesController.go:52] 4543fd 
+2017/03/06 10:13:21 [D] [userControllers.go:54] 2 
+2017/03/06 10:13:23 [D] [userControllers.go:54] 2 
+2017/03/06 10:13:24 [D] [userRolesController.go:39] 1325432654 
+2017/03/06 10:13:25 [D] [userRolesController.go:52] 1325432654 
+2017/03/06 10:14:10 [D] [userRolesController.go:39] 1325432654 
+2017/03/06 10:14:10 [D] [userRolesController.go:39] 43214321 
+2017/03/06 10:14:11 [D] [userRolesController.go:52] 43214321 
+2017/03/06 10:14:14 [D] [userControllers.go:54] 1 
+2017/03/06 10:14:15 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:14:16 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:14:20 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:14:21 [D] [userRolesController.go:52] 4543fd 
+2017/03/06 10:14:25 [D] [userRolesController.go:39] 123 
+2017/03/06 10:14:25 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:14:25 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:14:26 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:14:26 [D] [userRolesController.go:39] demo 
+2017/03/06 10:14:26 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:14:27 [D] [userRolesController.go:39] demo 
+2017/03/06 10:14:27 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:14:27 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:14:28 [D] [userRolesController.go:39] 123 
+2017/03/06 10:14:28 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:15:49 [D] [userRolesController.go:39] 123 
+2017/03/06 10:15:51 [D] [userRolesController.go:52] 123 
+2017/03/06 10:17:54 [D] [userRolesController.go:39] 123 
+2017/03/06 10:17:57 [D] [userRolesController.go:39] 123 
+2017/03/06 10:17:58 [D] [userRolesController.go:39] 123 
+2017/03/06 10:17:59 [D] [userRolesController.go:39] 123 
+2017/03/06 10:17:59 [D] [userRolesController.go:39] 123 
+2017/03/06 10:18:01 [D] [userRolesController.go:39] 123 
+2017/03/06 10:18:01 [D] [userRolesController.go:39] 123 
+2017/03/06 10:18:02 [D] [userRolesController.go:39] 123 
+2017/03/06 10:21:39 [D] [userRolesController.go:39] 123 
+2017/03/06 10:21:39 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:21:40 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:21:40 [D] [userRolesController.go:39] demo 
+2017/03/06 10:21:40 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:21:41 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:21:41 [D] [userRolesController.go:39] 123 
+2017/03/06 10:21:41 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:21:42 [D] [userRolesController.go:39] 123 
+2017/03/06 10:21:42 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:21:42 [D] [userRolesController.go:39] 324314523 
+2017/03/06 10:21:43 [D] [userRolesController.go:39] demo 
+2017/03/06 10:21:44 [D] [userRolesController.go:52] demo 
+2017/03/06 10:31:19 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:31:21 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:31:23 [D] [userRolesController.go:39]  
+2017/03/06 10:31:25 [D] [userControllers.go:54] 1 
+2017/03/06 10:31:26 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:31:27 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:31:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:31:46 [D] [userRolesController.go:39]  
+2017/03/06 10:31:49 [D] [userControllers.go:54] 1 
+2017/03/06 10:31:49 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:31:50 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:31:52 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:31:52 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:31:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:32:04 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 10:32:10 [D] [userRolesController.go:39]  
+2017/03/06 10:32:13 [D] [userControllers.go:54] 1 
+2017/03/06 10:32:14 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:32:16 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:32:16 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:33:19 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:33:23 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:33:25 [D] [userRolesController.go:39]  
+2017/03/06 10:33:27 [D] [userControllers.go:54] 1 
+2017/03/06 10:33:28 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:33:29 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:33:30 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:33:30 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:34:15 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:34:18 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:34:20 [D] [userRolesController.go:39]  
+2017/03/06 10:34:21 [D] [userRolesController.go:39] demo 
+2017/03/06 10:34:23 [D] [userControllers.go:54] 1 
+2017/03/06 10:34:23 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:34:25 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:34:25 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:34:26 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:34:28 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:34:28 [D] [userRolesModels.go:86] {123456 134323re_join_432143 432143 431243} mas demo 
+2017/03/06 10:34:28 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:35:43 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:36:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:36:08 [D] [userRolesController.go:39]  
+2017/03/06 10:36:10 [D] [userControllers.go:54] 1 
+2017/03/06 10:36:11 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:36:13 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:36:13 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:36:14 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:36:16 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:36:16 [E] [userRolesModels.go:81] 权限不住 
+2017/03/06 10:36:16 [E] [userRolesController.go:81] 没有权限对这个域中的用户授权 
+2017/03/06 10:36:22 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:36:22 [E] [userRolesModels.go:81] 权限不住 
+2017/03/06 10:36:22 [E] [userRolesController.go:81] 没有权限对这个域中的用户授权 
+2017/03/06 10:40:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:40:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:40:34 [D] [userRolesController.go:39]  
+2017/03/06 10:40:36 [D] [userControllers.go:54] 1 
+2017/03/06 10:40:37 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:40:39 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:40:40 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:40:40 [E] [userRolesModels.go:81] 权限不住 
+2017/03/06 10:40:40 [E] [userRolesController.go:81] 没有权限对这个域中的用户授权 
+2017/03/06 10:40:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:40:52 [D] [userRolesController.go:39]  
+2017/03/06 10:40:56 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:40:57 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:40:59 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:40:59 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:41:12 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:41:17 [D] [userRolesController.go:39]  
+2017/03/06 10:41:19 [D] [userControllers.go:54] 1 
+2017/03/06 10:41:20 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:41:22 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:41:22 [E] [userRolesModels.go:104] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:41:22 [E] [userRolesController.go:106] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:41:27 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:41:27 [E] [userRolesModels.go:104] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:41:27 [E] [userRolesController.go:106] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:42:11 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:43:15 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:43:18 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:43:20 [D] [userRolesController.go:39]  
+2017/03/06 10:43:21 [D] [userControllers.go:54] 1 
+2017/03/06 10:43:22 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:43:24 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:43:24 [E] [userRolesModels.go:104] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:43:24 [E] [userRolesController.go:106] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:43:28 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:43:30 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:43:30 [E] [userRolesModels.go:81] 权限不住 
+2017/03/06 10:43:30 [E] [userRolesController.go:81] 没有权限对这个域中的用户授权 
+2017/03/06 10:43:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:44:01 [D] [userRolesController.go:39]  
+2017/03/06 10:44:02 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:44:06 [D] [userControllers.go:54] 1 
+2017/03/06 10:44:07 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:44:09 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:44:11 [E] [userRolesController.go:69] [{"user_id":"123456","role_id":"134323re_join_432143","code_number":"432143","role_name":"431243","state":true}] 
+2017/03/06 10:44:11 [E] [userRolesModels.go:81] 权限不住 
+2017/03/06 10:44:11 [E] [userRolesController.go:81] 没有权限对这个域中的用户授权 
+2017/03/06 10:47:45 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 10:47:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:47:51 [D] [userRolesController.go:39]  
+2017/03/06 10:47:53 [D] [userControllers.go:54] 1 
+2017/03/06 10:47:54 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:47:55 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:47:58 [D] [userRolesController.go:94] 123456 134323re_join_432143 
+2017/03/06 10:47:58 [E] [userRolesModels.go:104] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:47:58 [E] [userRolesController.go:106] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 10:48:03 [D] [userControllers.go:54] 1 
+2017/03/06 10:48:05 [D] [userControllers.go:54] 2 
+2017/03/06 10:48:06 [D] [userRolesController.go:39] 1325432654 
+2017/03/06 10:48:07 [D] [userRolesController.go:52] 1325432654 
+2017/03/06 10:48:10 [D] [userRolesController.go:39] 4543fd 
+2017/03/06 10:48:11 [D] [userRolesController.go:39] demo 
+2017/03/06 10:48:12 [D] [userRolesController.go:52] demo 
+2017/03/06 10:48:15 [D] [userRolesController.go:39] yangpanhong 
+2017/03/06 10:48:15 [D] [userRolesController.go:52] yangpanhong 
+2017/03/06 10:49:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:49:17 [D] [loginModels.go:17] get default theme. 
+2017/03/06 10:53:30 [D] [userRolesController.go:39]  
+2017/03/06 10:53:32 [D] [userControllers.go:54] 1 
+2017/03/06 10:53:33 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:53:34 [D] [userRolesController.go:52] 123456 
+2017/03/06 10:54:46 [D] [userRolesController.go:39] 123456 
+2017/03/06 10:54:47 [D] [userRolesController.go:52] 123456 
+2017/03/06 11:00:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:00:26 [D] [userRolesController.go:39]  
+2017/03/06 11:00:28 [D] [userControllers.go:54] 1 
+2017/03/06 11:00:29 [D] [userRolesController.go:39] 123456 
+2017/03/06 11:00:36 [D] [userControllers.go:190] 134323re_join_200000  
+2017/03/06 11:00:37 [D] [userControllers.go:190] 134323re_join_1000000  
+2017/03/06 11:00:40 [D] [userControllers.go:190] 134323re_join_200000  
+2017/03/06 11:00:43 [D] [userControllers.go:190] 134323re_join_1000000  
+2017/03/06 11:00:46 [D] [userControllers.go:54] 2 
+2017/03/06 11:00:48 [D] [userRolesController.go:39] 1325432654 
+2017/03/06 11:00:50 [D] [userRolesController.go:52] 1325432654 
+2017/03/06 11:00:52 [D] [userRolesController.go:39] 43214321 
+2017/03/06 11:00:55 [D] [userRolesController.go:39] demo 
+2017/03/06 11:00:56 [D] [userRolesController.go:52] demo 
+2017/03/06 11:00:58 [E] [userRolesController.go:69] [{"user_id":"demo","role_id":"mas_join_demo","code_number":"demo","role_name":"演示环境","state":true}] 
+2017/03/06 11:00:58 [D] [userRolesController.go:39] demo 
+2017/03/06 11:01:00 [D] [userRolesController.go:94] demo mas_join_demo 
+2017/03/06 11:01:00 [D] [userRolesController.go:39] demo 
+2017/03/06 11:01:17 [D] [userControllers.go:54] 1 
+2017/03/06 11:01:18 [D] [userControllers.go:54] 2 
+2017/03/06 11:01:20 [D] [userControllers.go:54] 1 
+2017/03/06 11:01:21 [D] [userControllers.go:54] 2 
+2017/03/06 11:03:53 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:03:56 [D] [userRolesController.go:39]  
+2017/03/06 11:05:34 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:19:31 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 11:19:33 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:19:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:20:30 [I] [roleModels.go:78] delete role info successfully. role id is : mas_join_43254 
+2017/03/06 11:21:26 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:21:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:22:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:22:13 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:23:53 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:35:48 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 11:35:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:35:58 [D] [loginModels.go:17] get default theme. 
+2017/03/06 11:36:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:16:23 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 12:16:29 [W] [main.go:24] have no authority. redirect to index 
+2017/03/06 12:16:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 12:16:52 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:17:39 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:17:43 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:17:58 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:18:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:18:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:18:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:19:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:19:25 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:21:02 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 12:21:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:21:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 12:21:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:22:17 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:22:43 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:22:45 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:24:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:24:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:24:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:25:13 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:25:23 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:27:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:27:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:28:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:30:12 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:30:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:30:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:31:58 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:33:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:33:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:40:34 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:40:36 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:40:38 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:40:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:40:54 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:41:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:41:36 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:42:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:42:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 12:42:38 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/06 12:42:42 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 12:42:48 [E] [domainShareController.go:209] 您没有权限修改这个域的共享信息 
+2017/03/06 12:42:56 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/06 12:42:56 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/06 12:42:56 [E] [domainShareController.go:53] <nil> 
+2017/03/06 12:42:59 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/06 12:43:17 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/06 12:43:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:32:51 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 13:33:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:34:10 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 13:34:18 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:34:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:38:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:38:47 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 13:38:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:38:59 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 13:39:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:39:05 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 13:39:14 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:59:22 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 13:59:28 [D] [loginModels.go:17] get default theme. 
+2017/03/06 13:59:43 [D] [loginModels.go:17] get default theme. 
+2017/03/06 14:00:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 14:09:15 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 14:09:23 [D] [loginModels.go:17] get default theme. 
+2017/03/06 14:29:54 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 14:30:55 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 14:33:35 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 14:33:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 14:33:45 [D] [loginModels.go:17] get default theme. 
+2017/03/06 14:33:49 [D] [userRolesController.go:33]  
+2017/03/06 14:33:51 [D] [userRolesController.go:33] demo 
+2017/03/06 14:33:52 [D] [userRolesController.go:33] yangpanhong 
+2017/03/06 14:33:55 [E] [userRolesController.go:63] [{"user_id":"yangpanhong","role_id":"mas_join_demo","code_number":"demo","role_name":"演示环境","state":true}] 
+2017/03/06 14:33:55 [D] [userRolesController.go:33] yangpanhong 
+2017/03/06 14:34:08 [D] [userRolesController.go:33] 324314523 
+2017/03/06 14:34:09 [D] [userRolesController.go:33] yangpanhong 
+2017/03/06 14:34:10 [D] [userControllers.go:54] 1 
+2017/03/06 14:34:11 [D] [userRolesController.go:33] 123456 
+2017/03/06 14:34:12 [E] [userRolesController.go:97] 您没有权限删除这个域中用户的角色信息 
+2017/03/06 14:57:27 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 14:59:43 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:02:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:07:27 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:07:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:11:58 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:20:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:20:58 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:21:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:21:15 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:22:27 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:23:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:23:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:23:45 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:23:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:25:31 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:37:56 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:39:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:41:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:41:50 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 15:55:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:55:06 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/06 15:55:06 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/06 15:55:06 [E] [domainShareController.go:53] <nil> 
+2017/03/06 15:55:08 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/06 15:55:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 15:55:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 15:59:35 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:12:57 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 16:14:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:15:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:15:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:17:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:17:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:17:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:17:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:19:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 16:19:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:20:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:20:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:21:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:21:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:21:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:22:00 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:23:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:23:18 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:24:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:24:35 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:24:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:29:00 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:29:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:29:05 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:31:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:31:27 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:31:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:31:34 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:34:47 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:34:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:35:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:36:00 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:37:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:37:07 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:37:33 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:39:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:39:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:42:58 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:36 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:38 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:45 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:43:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:46:18 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 16:46:54 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:48:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:00 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:07 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:12 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:15 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:49:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:53:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:53:56 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:53:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:54:45 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:54:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:56:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:56:55 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:57:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:57:38 [D] [loginModels.go:17] get default theme. 
+2017/03/06 16:58:55 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:00:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:00:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:00:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:05:34 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:05:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:06:28 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:07:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:07:19 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:07:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:07:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:08:21 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:08:23 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:09:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:09:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:09:25 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:11:21 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:12:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:14:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 17:14:09 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:15:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:16:07 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:16:16 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:16:26 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:17:26 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:38:34 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 17:39:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:39:56 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:40:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:40:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:41:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:42:05 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:44:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:45:09 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 17:45:14 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:45:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:46:16 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 17:46:19 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:46:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:47:21 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:47:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:48:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:48:47 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:49:51 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 17:49:53 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:50:09 [D] [loginModels.go:17] get default theme. 
+2017/03/06 17:50:12 [D] [loginModels.go:17] get default theme. 
+2017/03/06 18:43:13 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 18:45:21 [D] [loginModels.go:17] get default theme. 
+2017/03/06 18:46:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 18:52:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:10:54 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 20:11:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:11:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 20:11:30 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:11:38 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:11:41 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:11:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:15:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:15:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:22:25 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:30:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:30:44 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:31:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:34:37 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:34:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:36:56 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:40:56 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:43:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:44:33 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:45:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:52:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:53:13 [D] [loginModels.go:17] get default theme. 
+2017/03/06 20:59:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:23:21 [W] [main.go:24] have no authority. redirect to index 
+2017/03/06 21:23:21 [W] [main.go:24] have no authority. redirect to index 
+2017/03/06 21:35:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 21:35:55 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:12 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:15 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:19 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:31 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:35 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:36:54 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:38:18 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 21:38:25 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:38:40 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:38:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:38:49 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:38:52 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:40:03 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 21:40:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:40:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:41:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:42:33 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 21:42:35 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:43:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:43:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:44:07 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:44:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:44:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:44:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:45:54 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:46:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:46:06 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:48:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:51:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:51:56 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/06 21:52:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 21:52:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:01:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:07:14 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:08:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:22:05 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 22:22:19 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:22:57 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:23:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:23:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:23:13 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:27:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:28:09 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:28:48 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:29:05 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:30:03 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:30:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:31:07 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:31:28 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:33:33 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:33:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:36:00 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:36:26 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:37:04 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:37:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:37:31 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:37:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:39:47 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:40:02 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:40:22 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:40:50 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:41:15 [D] [loginModels.go:17] get default theme. 
+2017/03/06 22:46:51 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:28:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 23:30:33 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 23:36:11 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:36:42 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:37:34 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 23:38:15 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:39:43 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:40:50 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 23:44:29 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:44:47 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:44:59 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:45:08 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:46:01 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:50:20 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:51:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/06 23:51:46 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:51:53 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:52:10 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:52:13 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:52:24 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:52:27 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/06 23:52:32 [D] [loginModels.go:17] get default theme. 
+2017/03/06 23:52:47 [E] [loginController.go:61]   用户没有指定的域 sql: no rows in result set 
+2017/03/06 23:52:50 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:02:04 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 09:19:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 09:19:23 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:25:19 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:28:09 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:28:42 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:30:53 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:31:34 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:32:22 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:32:50 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:39:03 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:40:36 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:42:45 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 09:42:47 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:44:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 09:44:53 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:45:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:46:59 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 09:47:00 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:47:31 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:49:15 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:51:26 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:54:39 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:54:59 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:55:14 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:55:43 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:55:52 [E] [userControllers.go:181] 禁止将自己删除。 
+2017/03/07 09:56:02 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:56:43 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:56:52 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:57:27 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:57:39 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:58:26 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:59:08 [D] [loginModels.go:17] get default theme. 
+2017/03/07 09:59:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:01:01 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:02:00 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:02:28 [D] [userControllers.go:70] 2 
+2017/03/07 10:02:31 [D] [userControllers.go:70] 1 
+2017/03/07 10:02:35 [E] [userModels.go:131] 没有被授权删除这个域中的信息 
+2017/03/07 10:02:35 [E] [userControllers.go:181] 您没有权限操作这个域中的用户 
+2017/03/07 10:02:44 [E] [userControllers.go:344] <nil> 
+2017/03/07 10:02:51 [E] [userControllers.go:296] <nil> 
+2017/03/07 10:02:52 [E] [userControllers.go:296] <nil> 
+2017/03/07 10:02:55 [D] [userControllers.go:70] 2 
+2017/03/07 10:02:58 [D] [userControllers.go:70] 2 
+2017/03/07 10:03:02 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:04:23 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:05:25 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:05:51 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:07:24 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:08:05 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:09:25 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:09:30 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:10:01 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:11:04 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:12:51 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:13:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:14:42 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 10:14:44 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:15:13 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:15:57 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:17:14 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:18:43 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:19:02 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:20:56 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:21:43 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:22:19 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:22:58 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:23:57 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:24:18 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:24:41 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:27:47 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:28:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:28:59 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:29:37 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:30:01 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:30:37 [D] [userControllers.go:70] 2 
+2017/03/07 10:30:38 [D] [userControllers.go:70] 2 
+2017/03/07 10:30:41 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:30:45 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:31:35 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 10:32:03 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:32:13 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:32:21 [E] [roleModels.go:74] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_role_user_relation`, CONSTRAINT `fk_sys_role_user_01` FOREIGN KEY (`role_id`) REFERENCES `sys_role_info` (`role_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) 
+2017/03/07 10:32:29 [E] [roleModels.go:74] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_role_user_relation`, CONSTRAINT `fk_sys_role_user_01` FOREIGN KEY (`role_id`) REFERENCES `sys_role_info` (`role_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) 
+2017/03/07 10:34:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:34:15 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:34:23 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:35:18 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:35:20 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:35:28 [I] [roleModels.go:78] delete role info successfully. role id is : vertex_root_join_41234 
+2017/03/07 10:35:35 [I] [roleModels.go:78] delete role info successfully. role id is : 134323re_join_432143 
+2017/03/07 10:35:41 [I] [roleModels.go:78] delete role info successfully. role id is : mas_join_cademo 
+2017/03/07 10:35:49 [I] [roleModels.go:78] delete role info successfully. role id is : mas_join_demo 
+2017/03/07 10:36:23 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:37:41 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:37:44 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:38:15 [D] [userRolesController.go:33]  
+2017/03/07 10:38:28 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:05 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:14 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:16 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:17 [D] [userRolesController.go:33]  
+2017/03/07 10:39:21 [D] [userRolesController.go:33] demo 
+2017/03/07 10:39:26 [E] [userRolesController.go:70] [{"user_id":"demo","role_id":"mas_join_masadmin","code_number":"masadmin","role_name":"管理会计系统管理员","state":true}] 
+2017/03/07 10:39:26 [D] [userRolesController.go:33] demo 
+2017/03/07 10:39:32 [E] [userRolesController.go:70] [{"user_id":"yangpanhong","role_id":"mas_join_cademo","code_number":"cademo","role_name":"成本分摊演示角色","state":true},{"user_id":"yangpanhong","role_id":"mas_join_ftpdemo","code_number":"ftpdemo","role_name":"内部资金转移定价演示角色","state":true}] 
+2017/03/07 10:39:33 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:39:40 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:50 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:39:54 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:40:17 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:40:18 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:40:21 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:40:27 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:40:31 [D] [userRolesController.go:33]  
+2017/03/07 10:40:32 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:32 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:33 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:33 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:34 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:35 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:36 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:36 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:37 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:37 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:39 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:39 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:40 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:40 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 10:40:40 [D] [userRolesController.go:33] demo 
+2017/03/07 10:40:52 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/07 10:40:55 [D] [domainShareController.go:38] domain_id is : ecif 
+2017/03/07 10:40:58 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:41:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:41:11 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:41:26 [E] [orgController.go:88] 您没有权限删除这个域中的机构信息 
+2017/03/07 10:41:34 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:42:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:42:21 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_domain_share_info`, CONSTRAINT `fk_sys_domain_share_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE CASCADE) 
+2017/03/07 10:42:22 [D] [domainShareController.go:38] domain_id is : 134323re 
+2017/03/07 10:43:05 [E] [domainModels.go:95] Error 1451: Cannot delete or update a parent row: a foreign key constraint fails (`test`.`sys_org_info`, CONSTRAINT `fk_sys_org_info_01` FOREIGN KEY (`domain_id`) REFERENCES `sys_domain_info` (`domain_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) 
+2017/03/07 10:43:10 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 10:43:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:43:26 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:43:45 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:43:48 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/07 10:43:48 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 10:43:48 [E] [domainShareController.go:53] <nil> 
+2017/03/07 10:43:49 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 10:43:52 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:46:56 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:47:04 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:50:51 [D] [loginModels.go:17] get default theme. 
+2017/03/07 10:52:06 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 10:53:43 [D] [loginModels.go:17] get default theme. 
+2017/03/07 12:14:25 [D] [loginModels.go:17] get default theme. 
+2017/03/07 12:15:56 [D] [loginModels.go:17] get default theme. 
+2017/03/07 12:16:00 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 12:16:02 [D] [loginModels.go:17] get default theme. 
+2017/03/07 12:16:06 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/07 12:16:06 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 12:16:06 [E] [domainShareController.go:53] <nil> 
+2017/03/07 12:16:07 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/07 12:16:07 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 12:16:07 [E] [domainShareController.go:53] <nil> 
+2017/03/07 12:16:07 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/07 12:16:07 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 12:16:07 [E] [domainShareController.go:53] <nil> 
+2017/03/07 12:16:08 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/07 12:16:08 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/07 12:16:08 [E] [domainShareController.go:53] <nil> 
+2017/03/07 12:16:09 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 13:43:04 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:43:17 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:43:28 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:44:28 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:44:35 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:45:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:49:40 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:49:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:50:02 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:50:22 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:50:55 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 13:50:59 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:10:59 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:11:40 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:11:46 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:11:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:24:17 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:24:57 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:25:40 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:25:48 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:37:57 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:38:15 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:38:20 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:42:40 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:46:06 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:47:08 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:47:20 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:47:24 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:48:00 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:48:00 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:49:04 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:49:04 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:49:10 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:49:14 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:49:19 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:49:25 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:49:25 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:49:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:50:16 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:50:26 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:50:33 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:50:51 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:51:10 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:52:53 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:52:58 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:52:58 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:53:17 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:53:17 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:53:21 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:57:56 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:57:56 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:58:09 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:58:09 [D] [loginModels.go:24] get default theme. 
+2017/03/07 14:58:41 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 14:58:41 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:05:32 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:05:32 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:06:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:06:07 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:09:26 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:09:26 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:09:38 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:09:38 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:09:42 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:09:42 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:10:15 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:10:15 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:14:56 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:14:56 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:15:21 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:15:21 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:15:35 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:15:35 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:43:20 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:43:20 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:43:27 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:43:27 [D] [loginModels.go:24] get default theme. 
+2017/03/07 15:43:51 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 15:43:51 [D] [loginModels.go:24] get default theme. 
+2017/03/07 16:12:03 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 16:12:03 [D] [loginModels.go:24] get default theme. 
+2017/03/07 16:12:17 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 16:12:17 [D] [loginModels.go:24] get default theme. 
+2017/03/07 16:12:42 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 16:12:42 [D] [loginModels.go:24] get default theme. 
+2017/03/07 17:07:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 17:07:52 [D] [loginModels.go:24] get default theme. 
+2017/03/07 17:08:01 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 17:08:01 [D] [loginModels.go:24] get default theme. 
+2017/03/07 22:39:10 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 22:40:19 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:40:27 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:40:56 [D] [userControllers.go:204] mas_join_512345423 0 
+2017/03/07 22:40:59 [D] [userControllers.go:204] mas_join_45246543 0 
+2017/03/07 22:41:01 [D] [userControllers.go:204] mas_join_34124 0 
+2017/03/07 22:43:25 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:43:36 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:43:40 [D] [userRolesController.go:33]  
+2017/03/07 22:43:41 [D] [userRolesController.go:33] demo 
+2017/03/07 22:43:41 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 22:43:42 [D] [userRolesController.go:33] demo 
+2017/03/07 22:43:42 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 22:43:43 [D] [userRolesController.go:33] demo 
+2017/03/07 22:43:43 [D] [userRolesController.go:33] yangpanhong 
+2017/03/07 22:43:44 [D] [userRolesController.go:33] demo 
+2017/03/07 22:43:45 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:44:34 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:44:46 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 22:44:51 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/07 22:44:58 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:51:53 [D] [loginModels.go:17] get default theme. 
+2017/03/07 22:55:07 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:07:11 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 23:07:11 [I] [main.go:24] Start calculate remote service. 
+2017/03/07 23:07:55 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 23:07:55 [I] [main.go:24] Start calculate remote service. 
+2017/03/07 23:10:56 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/07 23:12:29 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:12:32 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:12:38 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:13:13 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:13:15 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:37 [D] [userControllers.go:204] vertex_root_join_vertex_root 0 
+2017/03/07 23:25:39 [D] [userControllers.go:204] vertex_root_join_vertex_root 1 
+2017/03/07 23:25:41 [D] [userControllers.go:204] vertex_root_join_vertex_root 0 
+2017/03/07 23:25:47 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:49 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:50 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:52 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:53 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:25:55 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:26:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:26:14 [D] [userRolesController.go:33]  
+2017/03/07 23:26:16 [D] [userRolesController.go:33] admin 
+2017/03/07 23:26:18 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:28:25 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:28:29 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:28:32 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:28:37 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:31:22 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:40 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:44 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:46 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:49 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:56 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:34:59 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:01 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:05 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:08 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:10 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:12 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:14 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:18 [D] [loginModels.go:17] get default theme. 
+2017/03/07 23:35:23 [D] [loginModels.go:17] get default theme. 
+2017/03/09 08:57:23 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/09 08:57:48 [D] [loginModels.go:17] get default theme. 
+2017/03/09 08:57:58 [D] [loginModels.go:17] get default theme. 
+2017/03/09 08:58:08 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:49:21 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/09 09:51:51 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:51:55 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:52:07 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:52:19 [W] [main.go:24] have no authority. redirect to index 
+2017/03/09 09:52:24 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:52:57 [D] [loginModels.go:17] get default theme. 
+2017/03/09 09:53:30 [D] [domainShareController.go:38] domain_id is : vertex_root 
+2017/03/09 09:53:30 [E] [checkUserModels.go:68] sql: no rows in result set 
+2017/03/09 09:53:30 [E] [domainShareController.go:53] <nil> 
+2017/03/09 09:53:32 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/09 16:22:38 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/09 16:25:22 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:25:29 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:25:32 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:25:47 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:27:17 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:27:42 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:27:53 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:28:10 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:28:20 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:29:15 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:30:05 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:30:19 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:30:36 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:30:51 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:31:20 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:32:51 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:32:54 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:33:03 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:36:07 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:36:10 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:39:22 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:39:27 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:39:43 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:40:07 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:40:18 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:40:23 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:40:32 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:40:44 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:42:09 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:42:20 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:00 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:17 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:29 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:32 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:35 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:43:38 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:44:26 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:44:30 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:44:33 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:44:52 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:45:03 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:45:23 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:49:16 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:49:24 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:50:42 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:50:54 [D] [loginModels.go:17] get default theme. 
+2017/03/09 16:50:58 [D] [loginModels.go:17] get default theme. 
+2017/03/09 17:08:44 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:17:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/12 11:20:38 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/12 11:23:34 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:23:40 [D] [userRolesController.go:33]  
+2017/03/12 11:23:41 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:25:56 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:25:58 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:26:23 [D] [userRolesController.go:33]  
+2017/03/12 11:28:20 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:20 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:21 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:21 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:21 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:22 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:23 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:24 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:25 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:26 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:26 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:27 [D] [userRolesController.go:33] demo 
+2017/03/12 11:28:27 [D] [userRolesController.go:33] yangpanhong 
+2017/03/12 11:28:41 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:29:14 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:29:18 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:32:45 [D] [loginModels.go:17] get default theme. 
+2017/03/12 11:36:31 [D] [loginModels.go:17] get default theme. 
+2017/03/13 16:44:40 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 16:45:10 [D] [loginModels.go:17] get default theme. 
+2017/03/13 16:45:40 [D] [userRolesController.go:33]  
+2017/03/13 17:03:26 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:03:50 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:06:41 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:06:45 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:08:50 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:08:53 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:09:16 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:09:18 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:10:04 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:10:07 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:11:18 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:11:23 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:12:06 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:12:15 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:12:39 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:13:03 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:13:43 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:15:27 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:41:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:46:41 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:51:10 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 17:51:34 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:53:48 [D] [userRolesController.go:33]  
+2017/03/13 17:53:56 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:54:15 [D] [domainShareController.go:38] domain_id is : mas 
+2017/03/13 17:54:38 [D] [loginModels.go:17] get default theme. 
+2017/03/13 17:55:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:01:43 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 18:01:53 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:02:10 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:03:56 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 18:04:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 18:06:09 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:06:15 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 18:06:18 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:06:25 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 18:06:31 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 18:07:00 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:07:40 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:11:03 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 18:11:04 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:12:49 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:12:53 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 18:12:57 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 18:12:57 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:12:57 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:13:11 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:34:47 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:34:51 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:35:28 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:35:33 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 18:35:37 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:35:47 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:36:11 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 18:36:11 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:36:11 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:36:17 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:36:17 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 18:36:21 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:36:28 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:36:28 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 18:37:16 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:37:20 [D] [userRolesController.go:33]  
+2017/03/13 18:37:22 [D] [userRolesController.go:33] demo 
+2017/03/13 18:38:04 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:38:04 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 18:41:07 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 18:41:07 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:41:07 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:42:02 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 18:42:02 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:42:02 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:42:04 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 18:42:04 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:42:04 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:42:06 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 18:42:34 [D] [loginModels.go:17] get default theme. 
+2017/03/13 18:42:58 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:42:58 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 18:44:49 [D] [domainShareController.go:43] domain_id is : yyy 
+2017/03/13 18:44:49 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:44:49 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:44:52 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 18:44:52 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:44:52 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:44:56 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 18:44:56 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:44:56 [E] [domainShareController.go:58] <nil> 
+2017/03/13 18:44:57 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 18:45:07 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:45:07 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 18:45:47 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 18:45:47 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 19:00:09 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:00:09 [E] [domainModels.go:89] 您没有权限删除这个域 
+2017/03/13 19:10:21 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 19:10:32 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:10:40 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:10:40 [E] [domainModels.go:106] 您没有权限删除这个域 
+2017/03/13 19:10:51 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:11:11 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:11:32 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:11:32 [E] [domainModels.go:106] 您没有权限删除这个域 
+2017/03/13 19:11:39 [D] [domainShareController.go:43] domain_id is : demo 
+2017/03/13 19:11:39 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:11:39 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:11:42 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:11:47 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:11:53 [D] [domainShareController.go:43] domain_id is : demo 
+2017/03/13 19:11:53 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:11:53 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:12:07 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:12:12 [D] [domainShareController.go:43] domain_id is : demo 
+2017/03/13 19:12:27 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:12:30 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:13:11 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 19:13:20 [E] [loginController.go:61]   用户没有指定的域 sql: no rows in result set 
+2017/03/13 19:13:27 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:13:43 [E] [loginController.go:28] parase with claims failed. 
+2017/03/13 19:13:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:13:53 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:14:21 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:14:21 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:14:21 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:15:25 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 19:16:16 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:16:28 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:16:28 [E] [domainModels.go:106] 您没有权限删除这个域 
+2017/03/13 19:16:31 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:16:31 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:16:31 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:16:42 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 19:16:45 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:17:02 [D] [domainShareController.go:43] domain_id is : drefe 
+2017/03/13 19:17:31 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:17:41 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:17:50 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:17:56 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 19:19:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:21:43 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:29:22 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:29:28 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:30:17 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:30:41 [D] [domainShareController.go:43] domain_id is : demo 
+2017/03/13 19:30:50 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:31:07 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:31:16 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:31:33 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:42:27 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:42:41 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:42:44 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:43:05 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:43:06 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:43:12 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:43:17 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:43:21 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 19:43:21 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:43:21 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:43:26 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:43:32 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:43:37 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/13 19:43:37 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:43:37 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:43:42 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:43:42 [E] [domainModels.go:106] 您没有权限删除这个域 
+2017/03/13 19:50:45 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 19:50:53 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:51:02 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:51:02 [E] [domainController.go:165] <nil> 
+2017/03/13 19:51:15 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:51:50 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:51:56 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:52:05 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:52:12 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:52:16 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 19:52:16 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:52:16 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:57:49 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:58:29 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:58:34 [D] [loginModels.go:17] get default theme. 
+2017/03/13 19:58:58 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:58:58 [E] [domainController.go:165] <nil> 
+2017/03/13 19:59:04 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 19:59:04 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 19:59:04 [E] [domainShareController.go:58] <nil> 
+2017/03/13 19:59:06 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 19:59:17 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:05:38 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 20:05:40 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:07:57 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 20:08:00 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:08:12 [D] [userRolesController.go:33]  
+2017/03/13 20:08:14 [D] [userRolesController.go:33] demo 
+2017/03/13 20:08:43 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:09:35 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:09:49 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 20:09:56 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 20:09:56 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 20:09:56 [E] [domainShareController.go:58] <nil> 
+2017/03/13 20:10:05 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:14:22 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 20:15:01 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:15:09 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:18:14 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:19:08 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:19:25 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:20:41 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:20:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:28:44 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:34:37 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:34:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:35:02 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:35:59 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:37:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 20:37:59 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:39:00 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 20:39:00 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:40:01 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:40:02 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:41:59 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:45:41 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:46:12 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:46:20 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:47:52 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:48:03 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:48:18 [D] [loginModels.go:17] get default theme. 
+2017/03/13 20:55:02 [W] [main.go:29] have no authority. redirect to index 
+2017/03/13 20:55:02 [W] [main.go:29] have no authority. redirect to index 
+2017/03/13 20:55:10 [W] [main.go:29] have no authority. redirect to index 
+2017/03/13 20:55:26 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:00:15 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:00:51 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:00:53 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:01:10 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:01:27 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 21:01:45 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:01:51 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:02:07 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:02:09 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:03:07 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:10:54 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:14:05 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:14:14 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 21:14:18 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:14:39 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:15:08 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:20:14 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:20:43 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:21:05 [E] [loginController.go:61]   用户没有指定的域 sql: no rows in result set 
+2017/03/13 21:21:10 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:21:38 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:24:05 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:24:10 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 21:24:10 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 21:24:10 [E] [domainShareController.go:58] <nil> 
+2017/03/13 21:24:11 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 21:24:11 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 21:24:11 [E] [domainShareController.go:58] <nil> 
+2017/03/13 21:25:25 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:25:46 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:26:03 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:26:33 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:26:41 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:31:29 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:31:39 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:32:22 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:32:34 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 21:32:36 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:32:58 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:33:13 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:33:33 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:33:39 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:33:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:34:33 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:34:36 [D] [userRolesController.go:33]  
+2017/03/13 21:34:39 [D] [userRolesController.go:33] demo 
+2017/03/13 21:34:40 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:34:42 [D] [userRolesController.go:33] demo 
+2017/03/13 21:34:43 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:34:44 [D] [userRolesController.go:33] demo 
+2017/03/13 21:34:45 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:34:46 [D] [userRolesController.go:33] demo 
+2017/03/13 21:34:48 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:37:20 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:37:32 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 21:37:35 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:37:37 [D] [userRolesController.go:33]  
+2017/03/13 21:37:39 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:37:43 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:37:45 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:38:26 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 21:38:28 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:38:35 [D] [userRolesController.go:33]  
+2017/03/13 21:38:37 [D] [userRolesController.go:33] yangpanhong 
+2017/03/13 21:38:42 [D] [userRolesController.go:33] demo 
+2017/03/13 21:38:54 [D] [loginModels.go:17] get default theme. 
+2017/03/13 21:39:47 [D] [loginModels.go:17] get default theme. 
+2017/03/13 22:12:46 [D] [loginModels.go:17] get default theme. 
+2017/03/13 22:20:19 [D] [domainShareController.go:43] domain_id is : fdsaf 
+2017/03/13 22:20:29 [D] [loginModels.go:17] get default theme. 
+2017/03/13 22:21:35 [E] [domainModels.go:98] <nil> 
+2017/03/13 23:08:30 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 23:08:46 [D] [loginModels.go:17] get default theme. 
+2017/03/13 23:09:52 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 23:15:44 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 23:17:07 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 23:17:19 [D] [loginModels.go:17] get default theme. 
+2017/03/13 23:17:24 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/13 23:17:24 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/13 23:17:24 [E] [domainShareController.go:58] <nil> 
+2017/03/13 23:17:26 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/13 23:17:28 [D] [loginModels.go:17] get default theme. 
+2017/03/13 23:54:49 [D] [logs.go:158] init log, platform log dir is : C:/Users/hzwy23/Desktop/devops/log/hauth.log 
+2017/03/13 23:56:53 [D] [loginModels.go:17] get default theme. 
+2017/03/13 23:56:56 [D] [loginModels.go:17] get default theme. 
+2017/03/13 23:57:01 [D] [loginModels.go:17] get default theme. 
