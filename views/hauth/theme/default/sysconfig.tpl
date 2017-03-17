@@ -34,7 +34,7 @@
     });
 
     $(document).ready(function(){
-        Hutils.initMenu(1,'0100000000',"系统服务","管理会计","公共信息");
+        Hutils.initMenu(1,'0100000000',"资源管理","用户与权限","系统审计");
         $("#page-wrapper").show();
         NProgress.done();
     });
