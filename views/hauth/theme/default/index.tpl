@@ -196,7 +196,13 @@
         },
 		// 判断子菜单系统显示状态，如果是隐藏，则切换到显示，如果是显示，则隐藏。
         HchangeWrapper:function(){
-            window.event.cancelBubble = true;
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                // firefox
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
             if ($(".H-tabs-index").html()==""){
                 $.Notify({
                     title:"温馨提示：",
@@ -220,12 +226,24 @@
         },
 		// 跳转到首页系统菜单。
         H_HomePage:function(){
-            window.event.cancelBubble=!0;
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                // firefox
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
             window.location.href="/HomePage"
         },
 		// 退出登录
         HLogOut:function(){
-            window.event.cancelBubble=!0;
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                // firefox
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
             $.Hconfirm({
                 callback:function(){
                     $.ajax({type:"Get",url:"/logout",cache:!1,async:!1,dataType:"text",
@@ -240,7 +258,14 @@
         },
 		// 用户信息管理
         UserMgrInfo:function(){
-            window.event.cancelBubble=!0;
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                // firefox
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
+
             $.Hmodal({
                 body:$("#mas-passwd-prop").html(),
                 footerBtnStatus:false,
@@ -414,7 +439,14 @@
 
 		// 切换tab页面
         __changetab : function(e){
-            window.event.cancelBubble = true;
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                // firefox
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
+
             // 隐藏子菜单页面
             Hutils.hideWrapper()
 
@@ -452,11 +484,36 @@
             $(mspan).append(hzw);
             $(mspan).append(mi);
             return mspan
-        },
-        // 关闭tab标签，以及tab标签关联的内容,在__genTabUI中引用了__closetab
-        __closetab:function(e){
+		},
+		getEvent:function(){
+			if(window.event)    {
+			    return window.event;
+			}
+			var func = Hutils.getEvent.caller;
+			while( func != null ){
+				var arg0 = func.arguments[0];
+				if(arg0){
+					if((arg0.constructor==Event || arg0.constructor ==MouseEvent
+						|| arg0.constructor==KeyboardEvent)
+						||(typeof(arg0)=="object" && arg0.preventDefault
+						&& arg0.stopPropagation)){
+						return arg0;
+					}
+				}
+				func = func.caller;
+			}
+			return null;
+		},
+		// 关闭tab标签，以及tab标签关联的内容,在__genTabUI中引用了__closetab
+		__closetab:function(e){
             // 取消后续事件
-            window.event.cancelBubble = true;
+			if (window.event != undefined){
+                window.event.cancelBubble = true;
+			} else {
+			    var event = Hutils.getEvent()
+				event.stopPropagation()
+			}
+
             // 获取被关闭tab的id
             var id = $(e).parent().attr("data-id");
 
