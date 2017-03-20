@@ -35,6 +35,30 @@
 
         $.extend(true,__DEFAULT,param);
 
+
+        var getEvent = function(){
+
+            if(window.event)    {
+                return window.event;
+            }
+            var func = getEvent.caller;
+
+            while( func != null ){
+                var arg0 = func.arguments[0];
+                if(arg0){
+                    if((arg0.constructor==Event || arg0.constructor ==MouseEvent
+                        || arg0.constructor==KeyboardEvent)
+                        ||(typeof(arg0)=="object" && arg0.preventDefault
+                        && arg0.stopPropagation)){
+                        return arg0;
+                    }
+                }
+                func = func.caller;
+            }
+            return null;
+        };
+
+
         // 1.get top node, and sort array
         function sortTree(a){
 
@@ -211,7 +235,13 @@
         * 给伸缩按钮绑定单击事件
         * */
         $this.find(".HTreeshowOrHideIconHzw").on("click",function () {
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             showOrHide($(this).parent())
         });
 
@@ -269,6 +299,29 @@
             __DEFAULT.showBorder = __DEFAULT.border
         }
 
+
+
+        var getEvent = function(){
+
+            if(window.event)    {
+                return window.event;
+            }
+            var func = getEvent.caller;
+
+            while( func != null ){
+                var arg0 = func.arguments[0];
+                if(arg0){
+                    if((arg0.constructor==Event || arg0.constructor ==MouseEvent
+                        || arg0.constructor==KeyboardEvent)
+                        ||(typeof(arg0)=="object" && arg0.preventDefault
+                        && arg0.stopPropagation)){
+                        return arg0;
+                    }
+                }
+                func = func.caller;
+            }
+            return null;
+        };
         /*
          * This function sort array.
          * Accept One Array Variable.
@@ -472,7 +525,14 @@
         })
 
         $(obj).find("input").on('input',function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
+
             var inpText = $(this).val();
             if (inpText == ""){
                 $(obj).find("ul li").show();
@@ -489,17 +549,35 @@
         })
 
         $(obj).find("input").on('click',function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             $(this).focus();
         })
 
         $(obj).find(".HshowOrHideIconHzw").on("click",function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             showOrHide($(this).parent())
         })
 
         $(obj).find("li").on('mouseover',function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
 
             var ul = $(this).closest("ul")
 
@@ -515,7 +593,13 @@
         })
 
         $(obj).find("li").on('click',function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
 
             var text = $(this).find("span").html();
             var id = $(this).attr("data-id");
@@ -537,11 +621,23 @@
         })
 
         $(obj).find("ul").on('mousewheel',function(){
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
         })
 
         $("div").scroll(function() {
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             var showUiStatus = $(obj).find(".HselectShowAreaHuangZhanWei").css("display")
             if (showUiStatus != "none"){
                 var ptop = $(obj).offset().top
@@ -552,7 +648,13 @@
         });
 
         $(document).scroll(function() {
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             var showUiStatus = $(obj).find(".HselectShowAreaHuangZhanWei").css("display")
             if (showUiStatus != "none"){
                 var ptop = $(obj).offset().top
@@ -563,7 +665,13 @@
         });
 
         $("body").scroll(function() {
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             var showUiStatus = $(obj).find(".HselectShowAreaHuangZhanWei").css("display")
             if (showUiStatus != "none"){
                 var ptop = $(obj).offset().top
@@ -575,7 +683,13 @@
 
         $(obj).find(".HshowSelectValue").on('click',function(){
             var showUiStatus = $(obj).find(".HselectShowAreaHuangZhanWei").css("display")
-            window.event.cancelBubble = true;
+            // 取消后续事件
+            if (window.event != undefined){
+                window.event.cancelBubble = true;
+            } else {
+                var event = getEvent()
+                event.stopPropagation()
+            }
             if (showUiStatus == "none"){
                 $(".HselectShowAreaHuangZhanWei").hide()
                 $(".HshowSelectValue i").css({
@@ -643,14 +757,13 @@
         //when select was change
         //change show values
         $(sel).on('change',function(){
-            //window.event.cancelBubble = true;
             var text = $(this).find("option:selected").text()
             $(obj).find(".HshowSelectValue span").html(text)
             if (typeof __DEFAULT.onChange == "function"){
                 __DEFAULT.onChange();
             }
         });
-    }
+    };
 }(jQuery));
 
 /*
