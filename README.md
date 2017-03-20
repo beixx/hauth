@@ -107,8 +107,12 @@ DB.passwd="xzPEh+SfFL3aimN0zGNB9w=="
 
 ## 启动方法
 ```shell
-## linux上，请执行。此外需要注意的是：linux上开启1024以下端口号需要管理权限。
+## linux上，请执行。此外需要注意的是：linux上开启1024以下端口号需要管理员权限。
 nohup ./hauth &
+
+## Mac上，
+sudo ./hauth
+
 ## windows上，
 ## 请直接双击hauth.exe可执行文件
 ```
