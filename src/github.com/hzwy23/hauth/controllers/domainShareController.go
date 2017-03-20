@@ -42,6 +42,23 @@ func (DomainShareControll)Page(ctx *context.Context){
 	var domain_id = ctx.Request.FormValue("domain_id")
 	logs.Debug("domain_id is :",domain_id)
 
+	cookie, _ := ctx.Request.Cookie("Authorization")
+	jclaim, err := hjwt.ParseJwt(cookie.Value)
+	if err != nil {
+		logs.Error(err)
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 410, "No Auth")
+		return
+	}
+
+	if jclaim.User_id != "admin" && domain_id != jclaim.Domain_id{
+		level := models.CheckDomainRights(jclaim.User_id,domain_id)
+		if level != 2 {
+			logs.Error("您没有权限修改这个域的共享信息")
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter,420,"您没有权限修改这个域的共享信息")
+			return
+		}
+	}
+
 
 	// get the domain details info
 	rst,err:=DomainCtl.models.GetRow(domain_id)
