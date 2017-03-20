@@ -40,6 +40,9 @@ ul {list-style:none;}
 .theme-bg-color{
     background-color: #009966;
 }
+.theme-bg-cyan{
+    background-color: #3b565d;
+}
 /*
 * 弹出框header css样式
 */
@@ -169,7 +172,6 @@ ul {list-style:none;}
     line-height: 36px;
     position: fixed;
     width: 100%;
-    background-color: #009966;
     bottom: 0px;
     z-index: 1024;
 }
@@ -188,7 +190,6 @@ ul {list-style:none;}
 .H-tabs-index{
     float: left;
     margin: 0px;
-    background-color: #FFFFFF;
     padding: 0px;
     border: none;
     overflow: hidden;
@@ -201,15 +202,15 @@ ul {list-style:none;}
     padding: 0px 12px;
     cursor: pointer;
     border: none;
-    background-color: #009966;
     height: 36px;
     line-height: 36px;
     outline: none;
     font-size: 10px;
     font-weight: 300;
 }
+
 .H-left-tab:hover{
-    background-color: #f3f3f4;
+    background-color: #cccccd;
 }
 /*
 * 靠右显示的tab页面
@@ -219,7 +220,6 @@ ul {list-style:none;}
     padding: 0px 12px;
     cursor: pointer;
     border: none;
-    background-color: #009966;
     height: 36px;
     line-height: 36px;
     outline: none;
@@ -227,7 +227,7 @@ ul {list-style:none;}
     font-weight: 300;
 }
 .H-right-tab:hover{
-    background-color: #f3f3f4;
+    background-color: #cccccd;
 }
 
 .H-gray-close {

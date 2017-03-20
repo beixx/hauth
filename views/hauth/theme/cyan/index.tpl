@@ -41,7 +41,7 @@
 
 </head>
 
-<body style="overflow: hidden" class="theme-bg-color">
+<body style="overflow: hidden" class="theme-bg-cyan">
 <div id="bigdata-platform-subsystem"
 	 style="margin-right:0px; background-size: cover; overflow: hidden;">
 	<div style="position: relative; height: 60px; text-align: left;">
@@ -59,15 +59,15 @@
 	</div>
 </div>
 <!--导航栏,标签切换栏, 修改为隐藏-->
-<div class="H-content-tab theme-bg-color">
+<div class="H-content-tab theme-bg-cyan">
 	<div class="H-tab-bar pull-left" id="H-tab-left">
-		<button class="H-left-tab theme-bg-color" onclick="Hutils.H_HomePage()"><i style="color: white" class="icon-th-large"></i></button>
+		<button class="H-left-tab theme-bg-cyan" onclick="Hutils.H_HomePage()"><i style="color: white" class="icon-th-large"></i></button>
 		<nav class="H-tabs-index"></nav>
 	</div>
 	<div class="H-tab-bar pull-right" id="H-tab-right">
-		<button data-toggle="tooltip" title="显示菜单栏" class="H-right-tab theme-bg-color" onclick="Hutils.HchangeWrapper()"><i style="color: white" class="icon-columns"></i></button>
-		<button data-toggle="tooltip" title="安全退出" class="H-right-tab theme-bg-color" onclick="Hutils.HLogOut()"><i style="color: white" class="icon-off"></i></button>
-		<button data-toggle="tooltip" title="用户信息" class="H-right-tab theme-bg-color" onclick="Hutils.UserMgrInfo()"><i style="color: white" class="icon-user"></i></button>
+		<button data-toggle="tooltip" title="显示菜单栏" class="H-right-tab theme-bg-cyan" onclick="Hutils.HchangeWrapper()"><i style="color: white" class="icon-columns"></i></button>
+		<button data-toggle="tooltip" title="安全退出" class="H-right-tab theme-bg-cyan" onclick="Hutils.HLogOut()"><i style="color: white" class="icon-off"></i></button>
+		<button data-toggle="tooltip" title="用户信息" class="H-right-tab theme-bg-cyan" onclick="Hutils.UserMgrInfo()"><i style="color: white" class="icon-user"></i></button>
 	</div>
 </div>
 
@@ -132,15 +132,15 @@
     };
 
     var changeTheme = function (id) {
-        $.HAjaxRequest({
-            url:"/v1/auth/theme/update",
-            type:'post',
-            dataType:'json',
-            data:{theme_id:id},
-            success:function () {
-                window.location.href="/HomePage"
+		$.HAjaxRequest({
+		    url:"/v1/auth/theme/update",
+			type:'post',
+			dataType:'json',
+			data:{theme_id:id},
+			success:function () {
+				window.location.href="/HomePage"
             },
-        })
+		})
     };
 
     var changemodifypassword = function(){
@@ -149,9 +149,9 @@
             body:$("#h-user-modify-password").html(),
             height:"420px",
             width:"720px",
-			preprocess:function () {
+            preprocess:function () {
                 var user_id = $("#h-user-details-user-id").html()
-				$("#h-modify-user-id").val(user_id)
+                $("#h-modify-user-id").val(user_id)
             },
             callback:function(hmode){
                 var newpd = $("#plat-change-passwd").find('input[name="newpasswd"]').val()
@@ -191,7 +191,7 @@
 
     // tab 管理模块
     var Hutils = {
-		// 隐藏子菜单系统，切换具体页面内容
+        // 隐藏子菜单系统，切换具体页面内容
         hideWrapper:function(){
             var htop = $("#wrapper").height();
             $("#wrapper").animate({
@@ -206,7 +206,7 @@
                 opacity:1,
             },360);
         },
-		// 判断子菜单系统显示状态，如果是隐藏，则切换到显示，如果是显示，则隐藏。
+        // 判断子菜单系统显示状态，如果是隐藏，则切换到显示，如果是显示，则隐藏。
         HchangeWrapper:function(){
             if (window.event != undefined){
                 window.event.cancelBubble = true;
@@ -218,13 +218,13 @@
             if ($(".H-tabs-index").html()==""){
                 $.Notify({
                     title:"温馨提示：",
-					message:"目前没有已经打开的页面",
-					type:"info",
-				});
-				return
-			};
+                    message:"目前没有已经打开的页面",
+                    type:"info",
+                });
+                return
+            };
 
-			// 判断子系统菜单也距离底部的位置，如果距离底部的位置是0，则隐藏子菜单系统，否则显示子菜单系统
+            // 判断子系统菜单也距离底部的位置，如果距离底部的位置是0，则隐藏子菜单系统，否则显示子菜单系统
             if ("0px" == $("#wrapper").css("bottom")){
                 Hutils.hideWrapper()
             }else{
@@ -236,7 +236,7 @@
                 title:"亲,此处无法编辑哟"
             }).tooltip("show")
         },
-		// 跳转到首页系统菜单。
+        // 跳转到首页系统菜单。
         H_HomePage:function(){
             if (window.event != undefined){
                 window.event.cancelBubble = true;
@@ -247,7 +247,7 @@
             }
             window.location.href="/HomePage"
         },
-		// 退出登录
+        // 退出登录
         HLogOut:function(){
             if (window.event != undefined){
                 window.event.cancelBubble = true;
@@ -268,7 +268,7 @@
                 body:"<span style='font-size: 15px; font-weight: 500; height: 90px; line-height: 90px;padding-left: 90px;'>是否确认退出登录？</span>"
             })
         },
-		// 用户信息管理
+        // 用户信息管理
         UserMgrInfo:function(){
             if (window.event != undefined){
                 window.event.cancelBubble = true;
@@ -282,24 +282,24 @@
                 body:$("#mas-passwd-prop").html(),
                 footerBtnStatus:false,
                 height:"420px",
-				width:"720px",
+                width:"720px",
                 header:"用户信息",
-				preprocess:function () {
-					$.getJSON("/v1/auth/user/query",function (data) {
-						$(data).each(function (index, element) {
-							$("#h-user-details-user-id").html(element.user_id)
-							$("#h-user-details-user-name").html(element.user_name)
-							$("#h-user-details-user-email").html(element.user_email)
-							$("#h-user-details-user-phone").html(element.user_phone)
+                preprocess:function () {
+                    $.getJSON("/v1/auth/user/query",function (data) {
+                        $(data).each(function (index, element) {
+                            $("#h-user-details-user-id").html(element.user_id)
+                            $("#h-user-details-user-name").html(element.user_name)
+                            $("#h-user-details-user-email").html(element.user_email)
+                            $("#h-user-details-user-phone").html(element.user_phone)
 
-							$("#h-user-details-user-org-name").html(element.org_unit_desc)
-							$("#h-user-details-user-domain").html(element.domain_id)
-							$("#h-user-details-user-domain-name").html(element.domain_name)
-							$("#h-user-details-user-create").html(element.create_user)
-							$("#h-user-details-user-create-date").html(element.create_date)
-							$("#h-user-details-user-modify").html(element.modify_user)
-							$("#h-user-details-user-modify-date").html(element.modify_date)
-                           	// 机构编码处理
+                            $("#h-user-details-user-org-name").html(element.org_unit_desc)
+                            $("#h-user-details-user-domain").html(element.domain_id)
+                            $("#h-user-details-user-domain-name").html(element.domain_name)
+                            $("#h-user-details-user-create").html(element.create_user)
+                            $("#h-user-details-user-create-date").html(element.create_date)
+                            $("#h-user-details-user-modify").html(element.modify_user)
+                            $("#h-user-details-user-modify-date").html(element.modify_date)
+                            // 机构编码处理
                             var upcombine = element.org_unit_id.split("_join_")
                             if (upcombine.length==2){
                                 $("#h-user-details-user-org").html(upcombine[1])
@@ -311,7 +311,7 @@
                 }
             });
         },
-		// 子系统中，打开具体页面按钮
+        // 子系统中，打开具体页面按钮
         goEntrySubSystem:function(e){
             // 隐藏子菜单系统，显示具体的内容
             Hutils.hideWrapper();
@@ -331,11 +331,11 @@
             var optHtml = Hutils.__genTabUI(data_id,name)
 
 
-			// 遍历整个tab栏目，查找指定id的资源是否打开，
-			// 如果该资源已经打开，则直接切换到该资源，无需从后台获取内容
-			// 如果该资源没有打开，则将flag为false，从后台获取资源内容
-			$(".H-tabs-index").find("span").each(function(index,element){
-			    // 如果资源存在，直接切换到这个资源的tab中。
+            // 遍历整个tab栏目，查找指定id的资源是否打开，
+            // 如果该资源已经打开，则直接切换到该资源，无需从后台获取内容
+            // 如果该资源没有打开，则将flag为false，从后台获取资源内容
+            $(".H-tabs-index").find("span").each(function(index,element){
+                // 如果资源存在，直接切换到这个资源的tab中。
                 if (data_id == $(element).attr("data-id")){
                     Hutils.__changetab(element)
                     flag = true;
@@ -362,19 +362,19 @@
                         // 隐藏内容显示区域
                         $("#h-main-content").find("div.active").removeClass("active").addClass("none");
                         var newContent = document.createElement("div")
-						$(newContent).attr({
-						    "data-type":"frame",
-							"data-id":data_id,
-						}).css({
-						    "padding":"0px",
-							"margin":"0px",
-						}).addClass("active").html(data)
+                        $(newContent).attr({
+                            "data-type":"frame",
+                            "data-id":data_id,
+                        }).css({
+                            "padding":"0px",
+                            "margin":"0px",
+                        }).addClass("active").html(data)
                         $("#h-main-content").append(newContent);
                     }
                 });
             }
         },
-		// 打开指定资源按钮
+        // 打开指定资源按钮
         openTab:function(param){
             // 隐藏子菜单页面
             Hutils.hideWrapper();
@@ -449,7 +449,7 @@
             }
         },
 
-		// 切换tab页面
+        // 切换tab页面
         __changetab : function(e){
             if (window.event != undefined){
                 window.event.cancelBubble = true;
@@ -462,13 +462,13 @@
             // 隐藏子菜单页面
             Hutils.hideWrapper()
 
-			// 清除所有tab的激活标签
+            // 清除所有tab的激活标签
             $(".active-tab").removeClass("active-tab");
 
             // 给新的tab加上激活标签
             $(e).addClass("active-tab")
 
-			// 获取新tab的id
+            // 获取新tab的id
             var id = $(e).attr("data-id");
 
             // 在已经打开的页面中，根据id，寻找到指定的页面，将这个页面显示出来
@@ -489,8 +489,8 @@
             $(hzw).html(name);
             $(hzw).css({
                 "font-weight":"600",
-				"color":"white",
-            })
+                "color":"white",
+            });
 
             var mi = document.createElement("i")
             $(mi).css("font-size","14px")
@@ -500,35 +500,35 @@
             $(mspan).append(hzw);
             $(mspan).append(mi);
             return mspan
-		},
-		getEvent:function(){
-			if(window.event)    {
-			    return window.event;
-			}
-			var func = Hutils.getEvent.caller;
-			while( func != null ){
-				var arg0 = func.arguments[0];
-				if(arg0){
-					if((arg0.constructor==Event || arg0.constructor ==MouseEvent
-						|| arg0.constructor==KeyboardEvent)
-						||(typeof(arg0)=="object" && arg0.preventDefault
-						&& arg0.stopPropagation)){
-						return arg0;
-					}
-				}
-				func = func.caller;
-			}
-			return null;
-		},
-		// 关闭tab标签，以及tab标签关联的内容,在__genTabUI中引用了__closetab
-		__closetab:function(e){
+        },
+        getEvent:function(){
+            if(window.event)    {
+                return window.event;
+            }
+            var func = Hutils.getEvent.caller;
+            while( func != null ){
+                var arg0 = func.arguments[0];
+                if(arg0){
+                    if((arg0.constructor==Event || arg0.constructor ==MouseEvent
+                        || arg0.constructor==KeyboardEvent)
+                        ||(typeof(arg0)=="object" && arg0.preventDefault
+                        && arg0.stopPropagation)){
+                        return arg0;
+                    }
+                }
+                func = func.caller;
+            }
+            return null;
+        },
+        // 关闭tab标签，以及tab标签关联的内容,在__genTabUI中引用了__closetab
+        __closetab:function(e){
             // 取消后续事件
-			if (window.event != undefined){
+            if (window.event != undefined){
                 window.event.cancelBubble = true;
-			} else {
-			    var event = Hutils.getEvent()
-				event.stopPropagation()
-			}
+            } else {
+                var event = Hutils.getEvent()
+                event.stopPropagation()
+            }
 
             // 获取被关闭tab的id
             var id = $(e).parent().attr("data-id");
@@ -613,7 +613,7 @@
                 $(mdiv).attr({
                     "data-id":res_id,
                     "data-role":"tile",
-					"data-url":res_url,
+                    "data-url":res_url,
                 }).addClass(res_class).addClass("fg-white hzwy23div")
                     .css("background-color",res_bg_color);
 
@@ -690,11 +690,11 @@
                         $(".hzwy23div").click(function () {
                             Hutils.goEntrySubSystem(this)
                         })
-					} else if (TypeId == 0) {
+                    } else if (TypeId == 0) {
                         $(".hzwy23div").click(function(){
                             Hutils.go_entry(this)
                         })
-					}
+                    }
 
                     $(function() {
                         //取消水平滑动的插件
@@ -751,7 +751,6 @@
 				</button>
 			</div>
 		</div>
-		<!-- Table -->
 		<table class="table table-bordered table-responsive">
 			<tr style="height: 36px;line-height: 36px;">
 				<td style="text-align: right;">用户id:&nbsp;</td>
