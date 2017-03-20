@@ -31,8 +31,6 @@ import (
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/toolbox"
 	"github.com/astaxie/beego/utils"
-	"github.com/hzwy23/dbobj"
-	"github.com/hzwy23/hauth/utils/token/hjwt"
 )
 
 // default filter execution points
@@ -53,15 +51,22 @@ const (
 var (
 	// HTTPMETHOD list the supported http methods.
 	HTTPMETHOD = map[string]string{
-		"GET":     "GET",
-		"POST":    "POST",
-		"PUT":     "PUT",
-		"DELETE":  "DELETE",
-		"PATCH":   "PATCH",
-		"OPTIONS": "OPTIONS",
-		"HEAD":    "HEAD",
-		"TRACE":   "TRACE",
-		"CONNECT": "CONNECT",
+		"GET":       "GET",
+		"POST":      "POST",
+		"PUT":       "PUT",
+		"DELETE":    "DELETE",
+		"PATCH":     "PATCH",
+		"OPTIONS":   "OPTIONS",
+		"HEAD":      "HEAD",
+		"TRACE":     "TRACE",
+		"CONNECT":   "CONNECT",
+		"MKCOL":     "MKCOL",
+		"COPY":      "COPY",
+		"MOVE":      "MOVE",
+		"PROPFIND":  "PROPFIND",
+		"PROPPATCH": "PROPPATCH",
+		"LOCK":      "LOCK",
+		"UNLOCK":    "UNLOCK",
 	}
 	// these beego.Controller's methods shouldn't reflect to AutoRouter
 	exceptMethod = []string{"Init", "Prepare", "Finish", "Render", "RenderString",
@@ -779,6 +784,7 @@ func (p *ControllerRegister) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 		}
 
 		execController.URLMapping()
+
 		if !context.ResponseWriter.Started {
 			//exec main logic
 			switch runMethod {
@@ -803,6 +809,7 @@ func (p *ControllerRegister) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 					method.Call(in)
 				}
 			}
+
 			//render template
 			if !context.ResponseWriter.Started && context.Output.Status == 0 {
 				if BConfig.WebConfig.AutoRender {
@@ -812,6 +819,7 @@ func (p *ControllerRegister) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 				}
 			}
 		}
+
 		// finish all runRouter. release resource
 		execController.Finish()
 	}
@@ -824,6 +832,7 @@ func (p *ControllerRegister) ServeHTTP(rw http.ResponseWriter, r *http.Request) 
 	if len(p.filters[FinishRouter]) > 0 && p.execFilter(context, urlPath, FinishRouter) {
 		goto Admin
 	}
+
 Admin:
 	//admin module record QPS
 	if BConfig.Listen.EnableAdmin {
@@ -874,34 +883,6 @@ Admin:
 	// Call WriteHeader if status code has been set changed
 	if context.Output.Status != 0 {
 		context.ResponseWriter.WriteHeader(context.Output.Status)
-	}
-	go logToDb(context)
-}
-
-func logToDb(ctx *beecontext.Context) {
-	defer func(){
-		if r:=recover();r != nil {
-			logs.Error("写入日志信息失败")
-		}
-	}()
-	url := ctx.Request.URL.Path
-	if strings.HasPrefix(url, "/v1/") {
-
-		sql := `insert into sys_handle_logs(uuid,user_id,handle_time,client_ip,status_code,method,url,domain_id,data) values(uuid(),?,now(),?,?,?,?,?,left(?,2999))`
-		status := ctx.ResponseWriter.Status
-		if status == 0 {
-			status = 200
-		}
-
-		dt := ctx.Request.Form.Encode()
-
-		cookie, _ := ctx.Request.Cookie("Authorization")
-		jclaim, err := hjwt.ParseJwt(cookie.Value)
-		if err != nil {
-			dbobj.Exec(sql, "dev", ctx.Input.IP(), status, ctx.Request.Method, url, "dev", dt)
-		} else {
-			dbobj.Exec(sql, jclaim.User_id, ctx.Input.IP(), status, ctx.Request.Method, url, jclaim.Domain_id, dt)
-		}
 	}
 }
 

@@ -1,8 +1,6 @@
 /**
  * Created by hzwy23 on 2016/9/28.
  */
-"use strict";
-
 (function($){
     $.fn.Htree = function(param){
         // 1. 获取top节点
