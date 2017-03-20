@@ -164,8 +164,8 @@ func init() {
 		//							) limit ?,?`
 		//sys_rdbms_052 = `select count(*)
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ? and di.domain_id = ?
@@ -178,8 +178,8 @@ func init() {
 		//
 		//sys_rdbms_053 = `select t.user_id,t.user_name,ra.status_desc,t.user_create_date,t.User_owner,t.User_email,t.User_phone,i.Org_unit_id,i.org_unit_desc,di.Domain_id,di.domain_name,t.User_maintance_date,t.User_maintance_user
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ? and di.domain_id = ?
@@ -191,12 +191,12 @@ func init() {
 		//							) limit ?,?`
 		//sys_rdbms_054 = `select t.user_id,t.user_name,ra.status_desc,t.user_create_date,t.User_owner,t.User_email,t.User_phone,i.Org_unit_id,i.org_unit_desc,di.Domain_id,di.domain_name,t.User_maintance_date,t.User_maintance_user
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ?
-         //                           and exists (
+		//                           and exists (
 		//								SELECT 1 from sys_domain_info s
 		//								where FIND_IN_SET(s.domain_id,getChildDomainList(?))
 		//								and di.domain_id = s.domain_id
@@ -204,12 +204,12 @@ func init() {
 		//							) limit ?,?`
 		//sys_rdbms_055 = `select count(*)
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ?
-         //                           and exists (
+		//                           and exists (
 		//								SELECT 1 from sys_domain_info s
 		//								where FIND_IN_SET(s.domain_id,getChildDomainList(?))
 		//								and di.domain_id = s.domain_id
@@ -220,7 +220,7 @@ func init() {
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ?
-         //                           and exists (
+		//                           and exists (
 		//								SELECT 1 from sys_domain_info s
 		//								where FIND_IN_SET(s.domain_id,getChildDomainList(?))
 		//								and di.domain_id = s.domain_id
@@ -285,8 +285,8 @@ func init() {
 								)`
 		//sys_rdbms_062 = `select count(*)
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ? and di.domain_id = ?
@@ -298,12 +298,12 @@ func init() {
 		//							) and i.org_unit_id = ?`
 		//sys_rdbms_063 = `select count(*)
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ?
-         //                           and exists (
+		//                           and exists (
 		//								SELECT 1 from sys_domain_info s
 		//								where FIND_IN_SET(s.domain_id,getChildDomainList(?))
 		//								and di.domain_id = s.domain_id
@@ -311,8 +311,8 @@ func init() {
 		//							) and i.org_unit_id = ?`
 		//sys_rdbms_064 = `select t.user_id,t.user_name,ra.status_desc,t.user_create_date,t.User_owner,t.User_email,t.User_phone,i.Org_unit_id,i.org_unit_desc,di.Domain_id,di.domain_name,t.User_maintance_date,t.User_maintance_user
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ? and di.domain_id = ?
@@ -324,12 +324,12 @@ func init() {
 		//							) and i.org_unit_id = ? limit ?,?`
 		//sys_rdbms_065 = `select t.user_id,t.user_name,ra.status_desc,t.user_create_date,t.User_owner,t.User_email,t.User_phone,i.Org_unit_id,i.org_unit_desc,di.Domain_id,di.domain_name,t.User_maintance_date,t.User_maintance_user
 		//							from sys_user_info t
-         //                           inner join sys_sec_user u on t.user_id = u.user_id
-         //                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
+		//                           inner join sys_sec_user u on t.user_id = u.user_id
+		//                           inner join sys_user_status_attr ra on ra.status_id = u.status_id
 		//							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 		//							left join sys_domain_info di on i.domain_id = di.domain_id
 		//							where t.user_id <> ?
-         //                           and exists (
+		//                           and exists (
 		//								SELECT 1 from sys_domain_info s
 		//								where FIND_IN_SET(s.domain_id,getChildDomainList(?))
 		//								and di.domain_id = s.domain_id
@@ -363,7 +363,7 @@ func init() {
 		sys_rdbms_075 = `delete from sys_role_resource_relat where res_id = ?`
 		sys_rdbms_076 = `delete from sys_theme_value where res_id = ?`
 		sys_rdbms_077 = `delete from sys_resource_info where res_id = ?`
-		sys_rdbms_078 = `select t1.res_url from sys_index_page t1 inner join sys_theme_value t2 on t1.theme_id = t2.theme_id where t2.user_id = ?`
+		sys_rdbms_078 = `select t1.res_url from sys_index_page t1 inner join sys_user_theme t2 on t1.theme_id = t2.theme_id where t2.user_id = ?`
 		sys_rdbms_079 = `SELECT distinct domain_id FROM sys_user_info i inner join sys_org_info o on i.org_unit_id = o.org_unit_id where user_id = ?`
 		sys_rdbms_080 = `SELECT o.org_unit_id FROM sys_user_info i inner join sys_org_info o on i.org_unit_id = o.org_unit_id where user_id = ?`
 		sys_rdbms_081 = `select count(*) from SYS_domain_info t`
