@@ -1,11 +1,11 @@
-package main
+package service
 
 import (
 	"github.com/astaxie/beego"
 	"github.com/hzwy23/hauth/controllers"
 )
 
-func init() {
+func registerRouter() {
 
 	beego.Get("/HomePage", controllers.HomePage)
 

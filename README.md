@@ -24,7 +24,7 @@
 
 创建数据库用户，导入数据文件，目前支持mysql，mariadb。oracle版本属于商业版，暂时不开源，有需求可以联系。
 
-导入数据文件方法，请修改下边“==数据库名==”为你的数据库中存在的数据库名
+导入数据文件方法，请修改下边“数据库名”为你的数据库中存在的数据库名
 ```shell
 mysql -uroot -p 数据库名 < ./init_hauth.sql
 ```
@@ -32,32 +32,57 @@ mysql -uroot -p 数据库名 < ./init_hauth.sql
 
 **2. 编译hauth代码，生成可执行文件**
 
-2.1 Linux，Mac系统中
+2.1 Linux，Mac系统中，下边两种方式都可以，任选一种。
+
+**A. 直接以安装包的方式编译**
 
 执行下边命令，在执行命令前，请确保您已经安装了go sdk
 
 ```shell
 ## cd 到hauth的解压目录，然后执行下边命令
 ./build.sh
+## 上边这种模式编译会生成一个可执行文件hauth，
 ```
 这个命令将会在hauth的解压目录下生成hauth可执行文件。
 
+**B. 采用build编译main.go文件方式**
+
+main.go文件在hauth解压的根目录中，编译方法如下：
+```
+# cd 到hauth解压后的根目录
+export GOPATH=${PWD}
+go build -i main.go
+```
+
+使用liteide的童鞋，采用第二种方式比较好调试，只需要设置GOPATH环境变量后，就可以直接打开main.go，然后点击BuildAndRun按钮，既可以启动服务。
+
+
 2.2 Windows用户
 
-请先设置GOPATH和GOBIN两个环境变量，将这两个环境变量的值都设置到hauth的解压目录，切记，两个变量值设置到hauth的解压目录，==不要将GOBIN设置到GOPATH/bin==，请参考下边值设置，例如：
+请先设置GOPATH和GOBIN两个环境变量，将这两个环境变量的值都设置到hauth的解压目录，切记，两个变量值设置到hauth的解压目录，不要将GOBIN设置到GOPATH/bin，请参考下边值设置，例如：
 
 ```shell
 GOPATH=C:\User\hzwy23\Desktop\hauth
 GOBIN=C:\User\hzwy23\Desktop\hauth
 ```
 
-设置完环境变量后，执行
+设置完环境变量后.便可以编译源代码。
+
+**A. 直接以安装包的方式编译**
 
 ```shell
 go install github.com/hzwy23/hauth
 ```
 
 将会在GOBIN下生成hauth.exe可执行文件。
+
+**B. 采用build编译main.go文件方式**
+```shell
+go build -i main.go
+```
+
+将会在GOPATH目录下生成hauth.exe文件。
+
 
 **3 修改配置文件**
 
@@ -104,6 +129,4 @@ demo演示地址：https://www.asofdate.com
 1. 引入api gateway模块。
 
 2. 增加主题风格，以适应不同的人群审美。
-
-
 
