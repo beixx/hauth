@@ -123,7 +123,7 @@ var (
 	//function:
 	//argument:
 	//return:
-	//sys_rdbms_024 = ""
+	sys_rdbms_024 = ""
 	//code:025
 	//function:
 	//argument:

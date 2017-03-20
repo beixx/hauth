@@ -58,7 +58,7 @@ func init() {
 							inner join sys_org_info i on i.org_unit_id = t.org_unit_id
 							inner join sys_domain_info di on i.domain_id = di.domain_id
 							where t.user_id = ?`
-		//sys_rdbms_024 = `insert into sys_role_user_relation(uuid,role_id,user_id,maintance_date,maintance_user) values(uuid(),?,?,str_to_date(?,'%Y-%m-%d'),?)`
+		sys_rdbms_024 = `update sys_user_theme set theme_id = ? where user_id = ?`
 		//sys_rdbms_025 = `delete from  sys_role_user_relation where uuid = ?`
 		sys_rdbms_026 = `insert into sys_role_info(role_id,role_name,role_owner,role_create_date,role_status_id,domain_id,role_maintance_date,role_maintance_user,code_number) values(?,?,?,now(),?,?,now(),?,?)`
 		sys_rdbms_027 = `delete from  sys_role_info where role_id = ?`

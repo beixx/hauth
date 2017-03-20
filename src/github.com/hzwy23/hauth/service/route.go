@@ -13,6 +13,8 @@ func registerRouter() {
 
 	beego.Any("/logout", controllers.LogoutSystem)
 
+	beego.Post("/v1/auth/theme/update", controllers.ThemeCtl.Post)
+
 	beego.Get("/", controllers.IndexPage)
 
 	beego.Get("/v1/auth/index/entry", controllers.SubSystemEntry)
