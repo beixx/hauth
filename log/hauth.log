@@ -233,3 +233,46 @@
 2017/03/17 12:43:35 [D] [loginModels.go:17] get default theme. 
 2017/03/17 14:05:25 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
 2017/03/17 14:05:47 [D] [loginModels.go:17] get default theme. 
+2017/03/20 14:42:37 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 14:42:52 [D] [loginModels.go:17] get default theme. 
+2017/03/20 14:42:58 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 14:42:58 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 14:42:58 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 14:42:59 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/20 14:42:59 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 14:42:59 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 14:43:00 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/20 15:34:36 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 15:34:43 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 15:34:48 [D] [loginModels.go:17] get default theme. 
+2017/03/20 15:34:55 [D] [loginModels.go:17] get default theme. 
+2017/03/20 15:39:57 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 15:40:02 [D] [loginModels.go:17] get default theme. 
+2017/03/20 15:41:11 [E] [handlelogs.go:14] 写入日志信息失败 
+2017/03/20 15:41:23 [E] [handlelogs.go:14] 写入日志信息失败 
+2017/03/20 21:14:07 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 21:20:21 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 21:20:21 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 21:20:21 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 21:20:23 [D] [domainShareController.go:43] domain_id is : test 
+2017/03/20 21:20:23 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 21:20:23 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 21:20:24 [D] [domainShareController.go:43] domain_id is : mas 
+2017/03/20 21:25:41 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 22:10:21 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 22:10:26 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 22:15:20 [D] [logs.go:158] init log, platform log dir is : log/hauth.log 
+2017/03/20 22:15:29 [E] [handlelogs.go:14] 写入日志信息失败 
+2017/03/20 22:15:33 [E] [handlelogs.go:14] 写入日志信息失败 
+2017/03/20 22:15:37 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 22:15:37 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 22:15:37 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 22:15:38 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 22:15:38 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 22:15:38 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 22:15:39 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 22:15:39 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 22:15:39 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 
+2017/03/20 22:15:39 [D] [domainShareController.go:43] domain_id is : vertex_root 
+2017/03/20 22:15:39 [E] [checkUserModels.go:71] sql: no rows in result set 
+2017/03/20 22:15:39 [E] [domainShareController.go:56] 您没有权限修改这个域的共享信息 

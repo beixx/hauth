@@ -286,7 +286,11 @@
             showFontSize:"14px",
             iconColor:"#ff5763",
 
+            // 值改变触发事件
             onChange:"",
+
+            // select中默认值
+            value:"",
         };
 
         $.extend(true,__DEFAULT,param);
@@ -296,8 +300,6 @@
         if (__DEFAULT.showBorder==""){
             __DEFAULT.showBorder = __DEFAULT.border
         }
-
-
 
         var getEvent = function(){
 
@@ -505,14 +507,23 @@
             }
         }
 
+        function initDefaultValue() {
+            $(sel).val(__DEFAULT.value);
+            if (__DEFAULT.value != ""){
+                var text = $(sel).find("option:selected").text()
+                $(obj).find(".HshowSelectValue span").html(text)
+            }
+        }
+
         var ui = genTreeUI(sortTree(__DEFAULT.data))
         initSelect(sel,__DEFAULT.data)
 
         $(obj).html(ui)
         $(sel).after(obj)
         $(obj).find("input").focus();
-        // 清楚select的默认选中状态，确保select初始化后，没有任何值被选中
-        $(sel).val("");
+        // 清除select的默认选中状态，确保select初始化后，没有任何值被选中
+        // 如果在初始化Hselect时，指定了初始值，则使用初始值
+        initDefaultValue()
 
         $(obj).find("ul li").each(function(index,element){
             var curDept = parseInt($(element).attr("data-dept"))
@@ -520,8 +531,9 @@
             if (curDept>=nextDept || isNaN(nextDept)){
                 $(element).find("hzw").remove()
             }
-        })
+        });
 
+        // input 框中输入事件，当用户在Hselect的下拉框中搜索时，触发这个事件
         $(obj).find("input").on('input',function(){
             // 取消后续事件
             if (window.event != undefined){
@@ -546,6 +558,7 @@
             })
         })
 
+        // 当用户在搜索框中点击鼠标左键时，触发这个事件。
         $(obj).find("input").on('click',function(){
             // 取消后续事件
             if (window.event != undefined){
@@ -1260,7 +1273,9 @@
                     data:b.data,
                     dataType:b.dataType,
                     error:b.error,
-                    success:function(a){b.success(a)}
+                    success: function(da) {
+                        b.success(da)
+                    },
                 })
         },
     })

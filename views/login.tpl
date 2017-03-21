@@ -71,7 +71,8 @@
             type:"post",
             data:$("#inputZoon").serialize(),
             dataType:'json',
-            success:function(data){
+            success:function(){
+
                 window.location.href="/HomePage";
             },
             error:function(msg){
