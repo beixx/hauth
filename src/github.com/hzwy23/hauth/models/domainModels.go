@@ -1,9 +1,10 @@
 package models
 
 import (
+	"errors"
+
 	"github.com/hzwy23/dbobj"
 	"github.com/hzwy23/hauth/utils/logs"
-	"errors"
 )
 
 type ProjectMgr struct {
@@ -18,12 +19,17 @@ type ProjectMgr struct {
 	Domain_up_id          string `json:"domain_up_id"`
 }
 
-func (ProjectMgr)GetAll(offset,limit string)([]ProjectMgr,int64,error){
+type domainDataModel struct {
+	Domain_id  string       `json:"domain_id"`
+	Owner_list []ProjectMgr `json:"owner_list"`
+}
+
+func (ProjectMgr) GetAll(offset, limit string) ([]ProjectMgr, int64, error) {
 	rows, err := dbobj.Query(sys_rdbms_082, offset, limit)
 	defer rows.Close()
 	if err != nil {
 		logs.Error("query data error.", dbobj.GetErrorMsg(err))
-		return nil,0, err
+		return nil, 0, err
 	}
 
 	//	var oneLine ProjectMgr
@@ -31,23 +37,23 @@ func (ProjectMgr)GetAll(offset,limit string)([]ProjectMgr,int64,error){
 	err = dbobj.Scan(rows, &rst)
 	if err != nil {
 		logs.Error("query data error.", dbobj.GetErrorMsg(err))
-		return nil,0, err
+		return nil, 0, err
 	}
 	var total int64 = 0
 	dbobj.QueryRow(sys_rdbms_081).Scan(&total)
 
-	return rst,total, nil
+	return rst, total, nil
 }
 
-func (ProjectMgr)GetRow(domain_id string)(ProjectMgr,error){
+func (ProjectMgr) GetRow(domain_id string) (ProjectMgr, error) {
 	var rst ProjectMgr
-	err:=dbobj.QueryRow(sys_rdbms_084,domain_id).Scan(&rst.Project_id,
-	&rst.Project_name,&rst.Project_status,&rst.Maintance_date,&rst.User_id,&rst.Domain_maintance_date,&rst.Domain_maintance_user)
-	return rst,err
+	err := dbobj.QueryRow(sys_rdbms_084, domain_id).Scan(&rst.Project_id,
+		&rst.Project_name, &rst.Project_status, &rst.Maintance_date, &rst.User_id, &rst.Domain_maintance_date, &rst.Domain_maintance_user)
+	return rst, err
 }
 
 func (ProjectMgr) Get(domain_id string) ([]ProjectMgr, error) {
-	rows, err := dbobj.Query(sys_rdbms_034,domain_id,domain_id)
+	rows, err := dbobj.Query(sys_rdbms_034, domain_id, domain_id)
 	defer rows.Close()
 	if err != nil {
 		logs.Error("query data error.", dbobj.GetErrorMsg(err))
@@ -65,20 +71,42 @@ func (ProjectMgr) Get(domain_id string) ([]ProjectMgr, error) {
 	return rst, nil
 }
 
-func (ProjectMgr) Post(domain_id, domain_desc, domain_status, user_id,did string) error {
-	tx,err:=dbobj.Begin()
-	if err!=nil{
+func (ProjectMgr) GetOwner(domain_id string) (domainDataModel, error) {
+	var ret domainDataModel
+	rows, err := dbobj.Query(sys_rdbms_034, domain_id, domain_id)
+	defer rows.Close()
+	if err != nil {
+		logs.Error("query data error.", dbobj.GetErrorMsg(err))
+		return ret, err
+	}
+
+	//	var oneLine ProjectMgr
+	var rst []ProjectMgr
+	err = dbobj.Scan(rows, &rst)
+	if err != nil {
+		logs.Error("query data error.", dbobj.GetErrorMsg(err))
+		return ret, err
+	}
+
+	ret.Domain_id = domain_id
+	ret.Owner_list = rst
+	return ret, nil
+}
+
+func (ProjectMgr) Post(domain_id, domain_desc, domain_status, user_id, did string) error {
+	tx, err := dbobj.Begin()
+	if err != nil {
 		return err
 	}
 
-	_,err = tx.Exec(sys_rdbms_036, domain_id, domain_desc, domain_status, user_id, user_id)
-	if err!=nil{
+	_, err = tx.Exec(sys_rdbms_036, domain_id, domain_desc, domain_status, user_id, user_id)
+	if err != nil {
 		tx.Rollback()
 		return err
 	}
 
-	_,err = tx.Exec(sys_rdbms_086,domain_id,did,2,user_id,user_id)
-	if err!=nil{
+	_, err = tx.Exec(sys_rdbms_086, domain_id, did, 2, user_id, user_id)
+	if err != nil {
 		tx.Rollback()
 		return err
 	}
@@ -86,7 +114,7 @@ func (ProjectMgr) Post(domain_id, domain_desc, domain_status, user_id,did string
 	return tx.Commit()
 }
 
-func (ProjectMgr) Delete(js []ProjectMgr,user_id string,domain_id string) error {
+func (ProjectMgr) Delete(js []ProjectMgr, user_id string, domain_id string) error {
 	tx, err := dbobj.Begin()
 	if err != nil {
 		logs.Error(err)
@@ -99,8 +127,8 @@ func (ProjectMgr) Delete(js []ProjectMgr,user_id string,domain_id string) error 
 			return errors.New("您不能删除自己所处的域。")
 		}
 
-		if user_id != "admin"  {
-			level:=CheckDomainRights(user_id,val.Project_id)
+		if user_id != "admin" {
+			level := CheckDomainRights(user_id, val.Project_id)
 			if level != 2 {
 				tx.Rollback()
 				logs.Error("您没有权限删除这个域")

@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"net/http"
 	"html/template"
+	"net/http"
 
 	"github.com/astaxie/beego/context"
 	"github.com/hzwy23/hauth/models"
@@ -16,17 +16,16 @@ import (
 var indexModels = new(models.LoginModels)
 
 func HomePage(ctx *context.Context) {
-	defer func(){
-		if r:=recover();r!=nil{
-			http.Redirect(ctx.ResponseWriter,ctx.Request,"/",http.StatusMovedPermanently)
-		}
-	}()
+	defer hret.HttpPanic(func() {
+		logs.Error("panic")
+		ctx.Redirect(302, "/")
+	})
 
 	cok, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cok.Value)
 	if err != nil {
 		logs.Error(err)
-		http.Redirect(ctx.ResponseWriter, ctx.Request, "/", http.StatusMovedPermanently)
+		ctx.Redirect(302, "/")
 		return
 	}
 
@@ -35,10 +34,10 @@ func HomePage(ctx *context.Context) {
 	h, err := template.ParseFiles(url)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 402, "获取首页信息失败",err)
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "获取首页信息失败", err)
 		return
 	}
-	h.Execute(ctx.ResponseWriter,jclaim.User_id)
+	h.Execute(ctx.ResponseWriter, jclaim.User_id)
 }
 
 func LoginSystem(ctx *context.Context) {
@@ -69,10 +68,9 @@ func LoginSystem(ctx *context.Context) {
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 402, "can't get org id of user")
 		return
 	}
-
 	if ok, code, cnt, rmsg := models.CheckPasswd(userId, psd); ok {
-		token := hjwt.GenToken(userId, domainId, orgid)
-		cookie := http.Cookie{Name: "Authorization", Value: token, Path: "/", MaxAge: 3600}
+		token := hjwt.GenToken(userId, domainId, orgid, 86400)
+		cookie := http.Cookie{Name: "Authorization", Value: token, Path: "/", MaxAge: 86400}
 		http.SetCookie(ctx.ResponseWriter, &cookie)
 		hret.WriteHttpOkMsgs(ctx.ResponseWriter, "login successfully.")
 	} else {
@@ -82,7 +80,7 @@ func LoginSystem(ctx *context.Context) {
 }
 
 func LogoutSystem(ctx *context.Context) {
-	cookie := http.Cookie{Name: "Authorization", Value: "", Path: "/", MaxAge: 3600}
+	cookie := http.Cookie{Name: "Authorization", Value: "", Path: "/", MaxAge: 30}
 	http.SetCookie(ctx.ResponseWriter, &cookie)
 	hret.WriteHttpOkMsgs(ctx.ResponseWriter, "logout system safely.")
 }

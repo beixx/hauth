@@ -34,6 +34,7 @@ func registerRouter() {
 	beego.Put("/v1/auth/domain/share/put", controllers.DomainShareCtl.Put)
 	beego.Post("/v1/auth/domain/share/delete", controllers.DomainShareCtl.Delete)
 	beego.Get("/v1/auth/domain/owner", controllers.DomainCtl.GetDomainOwner)
+	beego.Get("/v1/auth/domain/self/owner", controllers.DomainCtl.GetOwner)
 	beego.Get("/v1/auth/domain/row/details", controllers.DomainCtl.GetDetails)
 	beego.Get("/v1/auth/domain/share/unauth", controllers.DomainShareCtl.UnAuth)
 

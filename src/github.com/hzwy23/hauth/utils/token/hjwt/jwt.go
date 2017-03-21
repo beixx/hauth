@@ -20,12 +20,12 @@ var (
 	key []byte = []byte("hzwy23@163.com-jwt")
 )
 
-func GenToken(user_id, domain_id, org_id string) string {
+func GenToken(user_id, domain_id, org_id string, dt int64) string {
 
 	claims := JwtClaims{
 		&jwt.StandardClaims{
 			NotBefore: time.Now().Unix(),
-			ExpiresAt: time.Now().Unix()+72000,
+			ExpiresAt: time.Now().Unix() + dt,
 			Issuer:    "hzwy23",
 		},
 		user_id,
@@ -63,6 +63,7 @@ func DestoryToken() string {
 	}
 	return ss
 }
+
 func CheckToken(token string) bool {
 	_, err := jwt.Parse(token, func(*jwt.Token) (interface{}, error) {
 		return key, nil

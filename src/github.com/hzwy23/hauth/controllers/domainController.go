@@ -12,7 +12,6 @@ import (
 	"github.com/hzwy23/hauth/utils/hret"
 	"github.com/hzwy23/hauth/utils/logs"
 	"github.com/hzwy23/hauth/utils/token/hjwt"
-
 )
 
 type DomainController struct {
@@ -21,13 +20,12 @@ type DomainController struct {
 
 var DomainCtl = &DomainController{models: &models.ProjectMgr{}}
 
-
 // 获取domain_info配置页面
 func (DomainController) GetDomainInfoPage(ctx *context.Context) {
 	defer hret.HttpPanic()
 
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
@@ -40,29 +38,29 @@ func (this DomainController) GetDomainInfo(ctx *context.Context) {
 
 	ctx.Request.ParseForm()
 
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
 	offset := ctx.Request.FormValue("offset")
 	limit := ctx.Request.FormValue("limit")
 
-	rst,total, err := this.models.GetAll(offset, limit)
+	rst, total, err := this.models.GetAll(offset, limit)
 	if err != nil {
 		logs.Error(err)
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 312, "查询数据库失败")
 	}
 
-	hret.WriteBootstrapTableJson(ctx.ResponseWriter,total, rst)
+	hret.WriteBootstrapTableJson(ctx.ResponseWriter, total, rst)
 }
 
 // 新增域信息
 func (this DomainController) PostDomainInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
 
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"您没有权限新增域信息页面，请联系系统管理员")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "您没有权限新增域信息页面，请联系系统管理员")
 		return
 	}
 
@@ -71,19 +69,19 @@ func (this DomainController) PostDomainInfo(ctx *context.Context) {
 	domainStatus := ctx.Request.FormValue("domainStatus")
 	//校验
 	if !utils.ValidAlnumAndSymbol(domainId, 1, 30) {
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"域名编码格式错误,应为字母或数字组合，不为空")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "域名编码格式错误,应为字母或数字组合，不为空")
 		return
 	}
 
 	//
 	if !utils.ValidBool(domainStatus) {
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"域状态不能为空")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "域状态不能为空")
 		return
 	}
 
-	if strings.TrimSpace(domainDesc) == ""{
+	if strings.TrimSpace(domainDesc) == "" {
 		logs.Error("域名信息为空")
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"所属域描述信息为空，请填写域描述信息")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "所属域描述信息为空，请填写域描述信息")
 		return
 	}
 
@@ -95,7 +93,7 @@ func (this DomainController) PostDomainInfo(ctx *context.Context) {
 		return
 	}
 
-	err = this.models.Post(domainId, domainDesc, domainStatus, jclaim.User_id,jclaim.Domain_id)
+	err = this.models.Post(domainId, domainDesc, domainStatus, jclaim.User_id, jclaim.Domain_id)
 
 	if err != nil {
 		logs.Error(err)
@@ -107,8 +105,8 @@ func (this DomainController) PostDomainInfo(ctx *context.Context) {
 // 删除域信息
 func (this DomainController) DeleteDomainInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
@@ -130,7 +128,7 @@ func (this DomainController) DeleteDomainInfo(ctx *context.Context) {
 		return
 	}
 
-	err = this.models.Delete(js,jclaim.User_id,jclaim.Domain_id)
+	err = this.models.Delete(js, jclaim.User_id, jclaim.Domain_id)
 	if err != nil {
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 311, err.Error())
 	} else {
@@ -142,8 +140,8 @@ func (this DomainController) DeleteDomainInfo(ctx *context.Context) {
 func (this DomainController) UpdateDomainInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
 
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
@@ -155,15 +153,15 @@ func (this DomainController) UpdateDomainInfo(ctx *context.Context) {
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 310, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
 
 	if jclaim.User_id != "admin" && domainId != jclaim.Domain_id {
-		level:=models.CheckDomainRights(jclaim.User_id,domainId)
+		level := models.CheckDomainRights(jclaim.User_id, domainId)
 		if level != 2 {
 			logs.Error(err)
-			hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"您没有权限编辑这个域")
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "您没有权限编辑这个域")
 			return
 		}
 	}
@@ -177,18 +175,17 @@ func (this DomainController) UpdateDomainInfo(ctx *context.Context) {
 	}
 }
 
-// 获取用户自身能够访问到的域信息
-func  (this DomainController) GetDomainOwner(ctx *context.Context){
+func (this DomainController) GetOwner(ctx *context.Context) {
 	ctx.Request.ParseForm()
 
 	cookie, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 410, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
-	rst, err := this.models.Get(jclaim.Domain_id)
+	rst, err := this.models.GetOwner(jclaim.Domain_id)
 	if err != nil {
 		logs.Error(err)
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 412, "查询数据库失败")
@@ -197,32 +194,52 @@ func  (this DomainController) GetDomainOwner(ctx *context.Context){
 	hret.WriteJson(ctx.ResponseWriter, rst)
 }
 
-// 获取指定域详细信息
-func (this DomainController)GetDetails(ctx *context.Context){
-	ctx.Request.ParseForm()
-	var domain_id = ctx.Request.FormValue("domain_id")
-
-	rst,err:=this.models.GetRow(domain_id)
-	if err!=nil{
-		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"查询域详细信息失败")
-		return
-	}
-	hret.WriteJson(ctx.ResponseWriter,rst)
-}
-
-// 获取用户自己所属域的编码
-func (this DomainController)GetDomainId(ctx *context.Context){
+// 获取用户自身能够访问到的域信息
+func (this DomainController) GetDomainOwner(ctx *context.Context) {
 	ctx.Request.ParseForm()
 
 	cookie, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 410, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
+		return
+	}
+	rst, err := this.models.Get(jclaim.Domain_id)
+	if err != nil {
+		logs.Error(err)
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "查询数据库失败")
+	}
+
+	hret.WriteJson(ctx.ResponseWriter, rst)
+}
+
+// 获取指定域详细信息
+func (this DomainController) GetDetails(ctx *context.Context) {
+	ctx.Request.ParseForm()
+	var domain_id = ctx.Request.FormValue("domain_id")
+
+	rst, err := this.models.GetRow(domain_id)
+	if err != nil {
+		logs.Error(err)
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "查询域详细信息失败")
+		return
+	}
+	hret.WriteJson(ctx.ResponseWriter, rst)
+}
+
+// 获取用户自己所属域的编码
+func (this DomainController) GetDomainId(ctx *context.Context) {
+	ctx.Request.ParseForm()
+
+	cookie, _ := ctx.Request.Cookie("Authorization")
+	jclaim, err := hjwt.ParseJwt(cookie.Value)
+	if err != nil {
+		logs.Error(err)
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
 	var domain_id = jclaim.Domain_id
 
-	hret.WriteJson(ctx.ResponseWriter,domain_id)
+	hret.WriteJson(ctx.ResponseWriter, domain_id)
 }

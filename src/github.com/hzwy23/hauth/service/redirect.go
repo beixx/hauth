@@ -37,7 +37,7 @@ func RedictToHtpps() {
 
 		redirectHandle.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
-			http.Redirect(w, r, targetHost, http.StatusMovedPermanently)
+			http.Redirect(w, r, targetHost, http.StatusTemporaryRedirect)
 
 		})
 

@@ -10,13 +10,14 @@ import (
 
 	"github.com/hzwy23/hauth/models"
 
+	"fmt"
+	"strings"
+
+	"github.com/hzwy23/hauth/utils"
 	"github.com/hzwy23/hauth/utils/hret"
 	"github.com/hzwy23/hauth/utils/logs"
 	"github.com/hzwy23/hauth/utils/token/hjwt"
-	"github.com/hzwy23/hauth/utils"
 	"github.com/tealeg/xlsx"
-	"strings"
-	"fmt"
 )
 
 type OrgController struct {
@@ -29,8 +30,8 @@ var OrgCtl = &OrgController{
 
 func (OrgController) GetOrgPage(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 	hz, _ := template.ParseFiles("./views/hauth/org_page.tpl")
@@ -39,29 +40,29 @@ func (OrgController) GetOrgPage(ctx *context.Context) {
 
 func (this OrgController) GetSysOrgInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
-	domain_id:=ctx.Request.FormValue("domain_id")
+	domain_id := ctx.Request.FormValue("domain_id")
 
 	cookie, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 310, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
 
-	if domain_id == ""{
+	if domain_id == "" {
 		domain_id = jclaim.Domain_id
 	}
 
 	if jclaim.User_id != "admin" && domain_id != jclaim.Domain_id {
-		level:=models.CheckDomainRights(jclaim.User_id,domain_id)
-		if level!=1 && level != 2{
-			hret.WriteHttpErrMsgs(ctx.ResponseWriter,421,"没有权限访问这个域中的信息。")
+		level := models.CheckDomainRights(jclaim.User_id, domain_id)
+		if level != 1 && level != 2 {
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "没有权限访问这个域中的信息。")
 			return
 		}
 	}
@@ -71,13 +72,13 @@ func (this OrgController) GetSysOrgInfo(ctx *context.Context) {
 		logs.Error(err)
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 417, "操作数据库失败")
 	}
-	hret.WriteJson(ctx.ResponseWriter,rst)
+	hret.WriteJson(ctx.ResponseWriter, rst)
 }
 
 func (this OrgController) DeleteOrgInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
@@ -94,11 +95,11 @@ func (this OrgController) DeleteOrgInfo(ctx *context.Context) {
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 310, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
 
-	err = this.models.Delete(mjs,jclaim.Org_id,jclaim.User_id,jclaim.Domain_id)
+	err = this.models.Delete(mjs, jclaim.Org_id, jclaim.User_id, jclaim.Domain_id)
 	if err != nil {
 		logs.Error(err)
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 418, err.Error())
@@ -111,15 +112,15 @@ func (this OrgController) DeleteOrgInfo(ctx *context.Context) {
 
 func (this OrgController) UpdateOrgInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 	cookie, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
 	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 310, "No Auth")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "No Auth")
 		return
 	}
 	org_unit_id := ctx.Request.FormValue("Id")
@@ -127,30 +128,30 @@ func (this OrgController) UpdateOrgInfo(ctx *context.Context) {
 	up_org_id := ctx.Request.FormValue("Up_org_id")
 	org_status_id := ctx.Request.FormValue("Status_cd")
 
-	did,err:=models.CheckDomainByOrgId(org_unit_id)
-	if err!=nil{
+	did, err := models.CheckDomainByOrgId(org_unit_id)
+	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,421,"您没有权限更新这个域中的机构信息")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "您没有权限更新这个域中的机构信息")
 		return
 	}
-	if jclaim.User_id!="admin" && jclaim.Domain_id != did{
-		level:=models.CheckDomainRights(jclaim.User_id,did)
-		if level != 2{
-			hret.WriteHttpErrMsgs(ctx.ResponseWriter,421,"您没有权限更新这个域中的机构信息",level)
+	if jclaim.User_id != "admin" && jclaim.Domain_id != did {
+		level := models.CheckDomainRights(jclaim.User_id, did)
+		if level != 2 {
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "您没有权限更新这个域中的机构信息", level)
 			return
 		}
 	}
 
-	check,err:=this.models.GetSubOrgInfo(org_unit_id)
-	if err!=nil{
+	check, err := this.models.GetSubOrgInfo(org_unit_id)
+	if err != nil {
 		logs.Error(err)
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"操作数据库失败。")
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "操作数据库失败。")
 		return
 	}
 
-	for _,val:=range check {
-		if val.Org_unit_id == up_org_id{
-			hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"上级机构号不能是自己的下属机构")
+	for _, val := range check {
+		if val.Org_unit_id == up_org_id {
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "上级机构号不能是自己的下属机构")
 			return
 		}
 	}
@@ -166,8 +167,8 @@ func (this OrgController) UpdateOrgInfo(ctx *context.Context) {
 
 func (this OrgController) InsertOrgInfo(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 	cookie, _ := ctx.Request.Cookie("Authorization")
@@ -182,10 +183,10 @@ func (this OrgController) InsertOrgInfo(ctx *context.Context) {
 	up_org_id := ctx.Request.FormValue("Up_org_id")
 	domain_id := ctx.Request.FormValue("Domain_id")
 
-	if domain_id != jclaim.Domain_id && jclaim.User_id != "admin"{
-		level:= models.CheckDomainRights(jclaim.User_id,domain_id)
-		if level != 2{
-			hret.WriteHttpErrMsgs(ctx.ResponseWriter,421,"您没有权限在这个中新增机构信息",level)
+	if domain_id != jclaim.Domain_id && jclaim.User_id != "admin" {
+		level := models.CheckDomainRights(jclaim.User_id, domain_id)
+		if level != 2 {
+			hret.WriteHttpErrMsgs(ctx.ResponseWriter, 421, "您没有权限在这个中新增机构信息", level)
 			return
 		}
 	}
@@ -195,24 +196,23 @@ func (this OrgController) InsertOrgInfo(ctx *context.Context) {
 	maintance_user := jclaim.User_id
 	org_status_id := "0"
 
-
-	if !utils.ValidAlphaNumber(org_unit_id,1,30){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"机构编码必须有1,30位字母或数字组成")
+	if !utils.ValidAlphaNumber(org_unit_id, 1, 30) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "机构编码必须有1,30位字母或数字组成")
 		return
 	}
 
-	if strings.TrimSpace(org_unit_desc)==""{
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"机构名称不能为空，请输入机构名称")
+	if strings.TrimSpace(org_unit_desc) == "" {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "机构名称不能为空，请输入机构名称")
 		return
 	}
 
-	if strings.TrimSpace(domain_id)==""{
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"请选择所属域，所属域不能为空")
+	if strings.TrimSpace(domain_id) == "" {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "请选择所属域，所属域不能为空")
 		return
 	}
 
-	if strings.TrimSpace(up_org_id)=="" {
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,419,"请选择上级机构号，上级机构号不能为空")
+	if strings.TrimSpace(up_org_id) == "" {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 419, "请选择上级机构号，上级机构号不能为空")
 		return
 	}
 
@@ -270,16 +270,15 @@ func (this OrgController) GetSubOrgInfo(ctx *context.Context) {
 	hret.WriteJson(ctx.ResponseWriter, rst)
 }
 
-
-func (this OrgController)Download(ctx *context.Context){
+func (this OrgController) Download(ctx *context.Context) {
 	ctx.Request.ParseForm()
-	if !models.BasicAuth(ctx){
-		hret.WriteHttpErrMsgs(ctx.ResponseWriter,403,"权限不足")
+	if !models.BasicAuth(ctx) {
+		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 403, "权限不足")
 		return
 	}
 
 	ctx.ResponseWriter.Header().Set("Content-Type", "application/vnd.ms-excel")
-	domain_id:=ctx.Request.FormValue("domain_id")
+	domain_id := ctx.Request.FormValue("domain_id")
 	fmt.Println(domain_id)
 	cookie, _ := ctx.Request.Cookie("Authorization")
 	jclaim, err := hjwt.ParseJwt(cookie.Value)
@@ -288,7 +287,7 @@ func (this OrgController)Download(ctx *context.Context){
 		hret.WriteHttpErrMsgs(ctx.ResponseWriter, 310, "No Auth")
 		return
 	}
-	if domain_id==""{
+	if domain_id == "" {
 		domain_id = jclaim.Domain_id
 	}
 	rst, err := this.models.Get(domain_id)
@@ -309,13 +308,13 @@ func (this OrgController)Download(ctx *context.Context){
 	{
 		row := sheet.AddRow()
 		cell1 := row.AddCell()
-		cell1.Value= "机构编码"
+		cell1.Value = "机构编码"
 		cell2 := row.AddCell()
-		cell2.Value= "机构名称"
+		cell2.Value = "机构名称"
 		cell3 := row.AddCell()
-		cell3.Value= "上级用户编码"
+		cell3.Value = "上级用户编码"
 		cell4 := row.AddCell()
-		cell4.Value= "机构状态"
+		cell4.Value = "机构状态"
 		cell5 := row.AddCell()
 		cell5.Value = "创建日期"
 		cell6 := row.AddCell()
@@ -328,21 +327,21 @@ func (this OrgController)Download(ctx *context.Context){
 		cell9.Value = "所属域"
 	}
 
-	for _,v:=range rst{
+	for _, v := range rst {
 		row := sheet.AddRow()
 		cell1 := row.AddCell()
-		cell1.Value=v.Code_number
+		cell1.Value = v.Code_number
 		cell2 := row.AddCell()
-		cell2.Value=v.Org_unit_desc
+		cell2.Value = v.Org_unit_desc
 		cell3 := row.AddCell()
-		uplist:=strings.Split(v.Up_org_id,"_join_")
-		if len(uplist)==2{
-			cell3.Value=uplist[1]
-		}else{
-			cell3.Value=v.Up_org_id
+		uplist := strings.Split(v.Up_org_id, "_join_")
+		if len(uplist) == 2 {
+			cell3.Value = uplist[1]
+		} else {
+			cell3.Value = v.Up_org_id
 		}
 		cell4 := row.AddCell()
-		cell4.Value=v.Org_status_desc
+		cell4.Value = v.Org_status_desc
 		cell5 := row.AddCell()
 		cell5.Value = v.Create_date
 		cell6 := row.AddCell()
