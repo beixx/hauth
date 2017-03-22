@@ -114,6 +114,7 @@ func init() {
 
 	//Get log dir from environment
 	logpath := os.Getenv("HBIGDATA_HOME")
+
 	conf, err := config.GetConfig(path.Join(logpath, "conf", "system.properties"))
 	if err != nil {
 		fmt.Println(err, "get system.properties failed.")
@@ -140,7 +141,7 @@ func init() {
 
 	Lg.EnableFuncCallDepth(true)
 
-	Lg.SetLogFuncCallDepth(3)
+	Lg.SetLogFuncCallDepth(4)
 
 	lvl, err := conf.Get("Hauth.log.level")
 

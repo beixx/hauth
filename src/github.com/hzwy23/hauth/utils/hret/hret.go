@@ -125,8 +125,9 @@ type HttpPanicFunc func()
 
 // HttpPanic user for stop panic up.
 func HttpPanic(f ...HttpPanicFunc) {
-	recover()
-	for _, val := range f {
-		val()
+	if r := recover(); r != nil {
+		for _, val := range f {
+			val()
+		}
 	}
 }

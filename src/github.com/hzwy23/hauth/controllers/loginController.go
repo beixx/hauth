@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
 
@@ -17,7 +18,7 @@ var indexModels = new(models.LoginModels)
 
 func HomePage(ctx *context.Context) {
 	defer hret.HttpPanic(func() {
-		logs.Error("panic")
+		fmt.Println("panic")
 		ctx.Redirect(302, "/")
 	})
 
