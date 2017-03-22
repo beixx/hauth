@@ -141,7 +141,7 @@ func init() {
 
 	Lg.EnableFuncCallDepth(true)
 
-	Lg.SetLogFuncCallDepth(4)
+	Lg.SetLogFuncCallDepth(3)
 
 	lvl, err := conf.Get("Hauth.log.level")
 
