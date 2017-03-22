@@ -122,6 +122,8 @@ sudo ./hauth
 管理员用户: admin, 密码: hzwy23
 
 
+！[安装流程演示](https://github.com/hzwy23/hauth/install_handle.gif)
+
 ## 交流方式
 
 E-mail： hzwy23@163.com
