@@ -114,8 +114,8 @@ func BasicAuth(ctx *context.Context) bool {
 }
 
 // 返回值是-1 表示没有读写权限
-// 返回值是0 表示有读取权限，没有写入权限
-// 返回值是1 表示有读写权限
+// 返回值是1 表示有读取权限，没有写入权限
+// 返回值是2 表示有读写权限
 func DomainAuth(ctx *context.Context, domain_id string) int {
 	level := -1
 	cookie, _ := ctx.Request.Cookie("Authorization")
@@ -131,7 +131,7 @@ func DomainAuth(ctx *context.Context, domain_id string) int {
 		level = CheckDomainRights(jclaim.User_id, domain_id)
 		return level
 	} else {
-		return 1
+		return 2
 	}
 }
 
@@ -149,7 +149,7 @@ func CheckDomain(ctx *context.Context, domain_id string, pattern string) bool {
 			return false
 		}
 	case "w":
-		if level != 1 {
+		if level != 2 {
 			return false
 		} else {
 			return true
