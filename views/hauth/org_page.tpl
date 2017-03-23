@@ -107,7 +107,7 @@
                                 title:"操作成功",
                                 message:"插入机构信息成功",
                                 type:"success",
-                            }),
+                            });
                             $(hmode).remove();
                             var domain_id = $("#h-org-domain-list").val()
                             OrgObj.tree(domain_id)

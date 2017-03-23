@@ -33,21 +33,10 @@
 
 <div id="h-user-show-box" class="row" style="margin: 0px 0px; border: #598f56 solid 1px;">
     <div class="col-sm-12 col-md-12 col-lg-12">
-        <div id="h-user-toolbar-list" style="height: 24px; line-height: 24px;">
-            <span style="font-size: 10px;font-weight: 600;display: inline">机构:</span>
-            <select id="h-user-org-list" class="form-control" style="height: 24px; line-height: 24px;padding: 0px; display: inline">
-            </select>
-            <span style="font-size: 10px;font-weight: 600;display: inline">&nbsp;状态:</span>
-            <select id="h-user-status-list" class="form-control" style="width: 180px;height: 24px; line-height: 24px;padding: 0px;display: inline;">
-                <option value="0">正常</option>
-                <option value="1">失效</option>
-            </select>
-            <button onclick="UserObj.search()" class="btn btn-success btn-xs" style="margin-left: 8px;"><i class="icon-search"> </i>查询</button>
-        </div>
         <table id="h-user-info-table-details"
+               class="table"
                data-toggle="table"
                data-toolbar="#h-user-toolbar-list"
-               data-url="/v1/auth/user/get"
                data-side-pagination="client"
                data-pagination="true"
                data-page-list="[20, 50, 100, 200]"
@@ -71,16 +60,44 @@
         </table>
     </div>
 </div>
+<div id="h-user-toolbar-list" style="height: 24px; line-height: 24px;">
+    <span style="font-size: 10px;font-weight: 600;display: inline">机构:</span>
+    <select id="h-user-org-list" class="form-control" style="width: 180px;height: 24px; line-height: 24px;padding: 0px; display: inline">
+    </select>
+    <span style="font-size: 10px;font-weight: 600;display: inline">&nbsp;状态:</span>
+    <select id="h-user-status-list" class="form-control" style="width: 180px;height: 24px; line-height: 24px;padding: 0px;display: inline;">
+        <option value="0">正常</option>
+        <option value="1">失效</option>
+    </select>
+    <button onclick="UserObj.search()" class="btn btn-success btn-xs" style="margin-left: 8px;"><i class="icon-search"> </i>查询</button>
+</div>
 <script>
     NProgress.start();
     $(document).ready(function(e){
-        var hwindow = document.documentElement.clientHeight;
-        $("#h-user-show-box").height(hwindow - 130)
+        /*
+         * 设置用户展示区域高度
+         * */
+        $("#h-user-show-box").height(document.documentElement.clientHeight - 130)
 
-        //初始化域信息
-        $.getJSON("/v1/auth/domain/owner",function(data){
+        /*
+        * 初始化table
+        * 获取默认域下边所有用户信息
+        * */
+        $("#h-user-info-table-details").bootstrapTable({
+            height:document.documentElement.clientHeight-130,
+            url:"/v1/auth/user/get",
+            queryParams:function (params) {
+                params.domain_id = $("#h-user-domain-list").val();
+                return params
+            },
+        });
+
+        /*
+        * 获取用户能够访问到的所有域信息列表
+        * */
+        $.getJSON("/v1/auth/domain/self/owner",function(data){
             var arr = new Array()
-            $(data).each(function(index,element){
+            $(data.owner_list).each(function(index,element){
                 var ijs = {}
                 ijs.id=element.domain_id
                 ijs.text=element.domain_desc
@@ -88,14 +105,22 @@
                 arr.push(ijs)
             });
 
-            $.getJSON("/v1/auth/domain/id",function (domain_id) {
-                $("#h-user-domain-list").val(domain_id).trigger("change")
-                $("#h-user-info-table-details").bootstrapTable({
-                    height:hwindow-130,
-                    queryParams:function (params) {
-                        params.domain_id = $("#h-user-domain-list").val();
-                        return params
-                    },
+            /*
+            * 初始化默认域下的机构树信息
+            * */
+            $.getJSON("/v1/auth/resource/org/get",{domain_id:data.domain_id},function(data){
+                var arr = new Array()
+                $(data).each(function(index,element){
+                    var ijs = {}
+                    ijs.id=element.org_id;
+                    ijs.text=element.org_desc;
+                    ijs.upId=element.up_org_id;
+                    arr.push(ijs)
+                });
+                $("#h-user-org-list").Hselect({
+                    data:arr,
+                    height:"24px",
+                    width:"180px",
                 });
             });
 
@@ -103,8 +128,16 @@
                 data:arr,
                 height:"24px",
                 width:"180px",
+                value:data.domain_id,
                 onChange:function () {
-                    var did = $("#h-user-domain-list").val()
+                    /*
+                    * 当右上角域信息值发生变化时
+                    * 重新获取新域中的用户信息
+                    * */
+                    $("#h-user-info-table-details").bootstrapTable('refresh');
+
+                    var did = $("#h-user-domain-list").val();
+
                     $.getJSON("/v1/auth/resource/org/get",{domain_id:did},function(data){
                         var arr = new Array()
                         $(data).each(function(index,element){
@@ -119,7 +152,6 @@
                             height:"24px",
                             width:"180px",
                         });
-                        $("#h-user-info-table-details").bootstrapTable('refresh');
                     });
                 }
             });
@@ -132,6 +164,7 @@
             width:"180px",
         })
     });
+
     var UserObj = {
         add:function(){
             var getDomainInfo = function () {

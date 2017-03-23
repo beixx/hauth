@@ -337,3 +337,37 @@ td{
     font-size: 12px;
     font-weight: 500;
 }
+
+#wrapper {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-delay: 0.1s;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-delay: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+}
+
+#h-main-content {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-delay: 0.1s;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-delay: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+}
+
+/*
+* 模态框默header样式
+*/
+.h-modal-header{
+    background-color: #ffffff;
+    height: 40px;
+    line-height:40px;
+    padding: 0px;
+}

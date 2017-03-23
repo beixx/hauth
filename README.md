@@ -117,6 +117,8 @@ sudo ./hauth
 ## 请直接双击hauth.exe可执行文件
 ```
 
+打开浏览器,访问:https://localhost:8090
+
 登录系统用户名是：demo，密码是：123456, 
 
 管理员用户: admin, 密码: hzwy23
@@ -130,9 +132,17 @@ E-mail： hzwy23@163.com
 
 demo演示地址：https://www.asofdate.com 
 
+## 代码共享列表
+
+github账号 | 
+---|
+xingyuejun | 
+hzwy23 |
+
+
 ## 改进计划
 
 1. 引入api gateway模块。
 
-2. 增加主题风格，以适应不同的人群审美。
+2. 增加主题风格，以适应不同的人群审美需求。
 
