@@ -21,6 +21,23 @@
     <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
     <script src="/static/nprogress/nprogress.js"></script>
+
+    <style type="text/css">
+        .h-github-source {
+            cursor: pointer;
+            border: #3caff3 solid 1px;
+            height: 40px;
+            line-height: 40px;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 600;
+            width: 240px;
+        }
+        .h-github-source:hover{
+            background-color: #cccccc;
+            color: #0f0f0f;
+        }
+    </style>
 </head>
 <body style="background-size: cover;background-image: url('/static/images/index_bg.jpg')">
 <div class="container-fluid">
@@ -32,13 +49,13 @@
             <div id="h-login-form" class="pull-left" style="display: none; height: 50px; line-height: 50px;">
                 <form id='inputZoon' class="navbar-form navbar-right" style="height: 35px;line-height: 35px;">
                     <div class="form-group input-group-sm">
-                        <input name="username" type="text" class="form-control"
+                        <input name="username" value="demo" type="text" class="form-control"
                                placeholder="账号">
                     </div>
                     &nbsp;
                     &nbsp;
                     <div class="form-group input-group-sm">
-                        <input name="password" type="password" class="form-control"
+                        <input name="password" value="123456" type="password" class="form-control"
                                placeholder="密码">
                     </div>
                     &nbsp;
@@ -53,11 +70,27 @@
             </div>
         </div>
     </nav>
-    <div class="col-sm-12 col-md-12 col-lg-12" style=" margin-top: 120px; text-align: center;">
-          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">演示用户: demo</span><br/>
-          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">演示密码: 123456</span><br/>
-          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">登录系统后，请先阅读系统帮助信息</span><br/>
-          <span style="color: white;height: 36px; line-height: 36px;font-size: 16px;">开源地址: </span><a target="blank" href="https://github.com/hzwy23/hauth">github.com/hzwy23/hauth</a>
+    <div class="row" style=" margin-top: 120px; text-align: center;height: 260px;">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+
+          </div>
+    </div>
+    <div class="row" style="text-align: center; height: 120px;">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" align="center">
+            <div onclick="OpenGithub()" class="h-github-source">
+                源码下载
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        </div>
     </div>
 </div>
 </body>
@@ -128,6 +161,10 @@
     function Hlogin(obj){
         $("#h-login-form").show();
         $(obj).hide();
+    };
+
+    function  OpenGithub() {
+        window.open("https://github.com/hzwy23/hauth")
     };
 
     function Hregister(){
