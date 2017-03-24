@@ -7,18 +7,18 @@
 
 ## 安装介绍
 
-1. 首先导入数据库文件,数据库文件在script目录中,导入数据库文件方法
+A).首先导入数据库文件,数据库文件在script目录中,导入数据库文件方法
 
 ```shell
 cd script
 mysql -uroot -p dbname < ./init_hauth.sql
 ```
 
-2. 修改数据库配置信息
+B).修改数据库配置信息
 
 配置文件在conf目录中，app.conf是beego的配置文件，主要涉及到服务端口号等等，另外一个是system.properties配置文件，这个里边主要是是=数据库连接信息与日志管理信息配置。
 
-beeog的配置方法，请在beego项目中查阅，请移步：beego.me。下边来讲讲system.proerties中数据库的配置方法。
+beego的配置方法，请在beego项目中查阅，请移步：beego.me。下边来讲讲system.proerties中数据库的配置方法。
 
 ```
 DB.type=mysql
@@ -34,3 +34,18 @@ DB.passwd="xzPEh+SfFL3aimN0zGNB9w=="
 2. 修改DB.user成相应的数据库用户名
 
 3. 修改DB.passwd成上边用户所对应的密码，系统启动后会自动加密，在此输入密码明文即可。
+
+## 启动服务
+
+```shell
+sudo ./hauth &
+```
+
+打开浏览器,登录 https://localhost:8090
+
+管理员 admin , 密码: hzwy23
+
+
+## 温馨提示:
+
+获取源代码,请移步: https://github.com/hzwy23/asofdate
